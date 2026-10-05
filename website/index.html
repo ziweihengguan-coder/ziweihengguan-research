@@ -1,0 +1,701 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="紫微斗數十四主星安星與十干四化公式的圖解詳論，逐式標明書籍來源、河洛數理與待古文驗證的部分。"><title>紫微斗數｜安星與四化公式圖解詳論</title><link rel="stylesheet" href="./assets/anxing-four-hua.css?v=2"><link rel="canonical" href="https://ziweihengguan.com/anxing-four-hua.html"><link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3"><meta property="og:type" content="article"><meta property="og:site_name" content="紫微衡觀"><meta property="og:title" content="安星與四化公式圖解詳論"><meta property="og:description" content="十四主星安星與十干四化公式，圖解說明書籍來源、河洛數理與待古文驗證之處。"><meta property="og:url" content="https://ziweihengguan.com/anxing-four-hua.html"></head><body><nav class="article-nav" aria-label="網站導覽"><a href="https://ziweihengguan.com/">← 返回紫微衡觀首頁</a><span>安星與四化公式圖解詳論</span></nav><header><p class="eyebrow">紫微斗數・古籍與數理</p><h1>安星與四化公式<br>圖解詳論</h1><p class="subtitle">從紫府安星、穩定祿母表，到化權816循環與科忌重建。每一條公式，都保留它的書籍來源與證據邊界。</p><div class="hero-tags"><span>古籍規則</span><span>河洛數理</span><span>現代形式化</span><span>待古文驗證</span></div><button class="print-action" id="print" type="button">列印文章</button></header><main><aside class="contents"><p><strong>新增解說：化權五步生成</strong></p><p>依「古文、數學公式、解說、備註來源」展開祿母表、廉退紫入與816循環。</p><a href="./quan-five-steps.html">閱讀五步解說 →</a></aside><p class="lede">公式能否算出結果，與古人是否曾以此編表，是兩個需要分別確認的問題。這篇文章把每一步展開，讓計算與來源都能清楚閱讀。</p><details class="contents"><summary>文章導覽</summary><nav class="toc" aria-label="文章目錄"><a href="#chapter-1">如何理解「公式已確認」</a><a href="#chapter-2">先區分三種數字座標</a><a href="#chapter-3">十四主星安星公式</a><a href="#chapter-4">文昌、文曲、左輔、右弼的安星結構</a><a href="#chapter-5">化祿：穩定母表與公式的起點</a><a href="#chapter-6">化權：祿前一干、星池更新與816局部循環</a><a href="#chapter-7">化科：科3／8名額公式、成對星曜與版本選擇</a><a href="#chapter-8">化忌：福槽骨架、印星池與受限選取</a><a href="#chapter-9">完整四化結果與兩個古本分支</a><a href="#chapter-10">四化共同結構：穩定骨架與少量重寫</a><a href="#chapter-11">哪些已確認，哪些仍待古文驗證</a><a href="#chapter-12">書籍來源與引用說明</a></nav></details><article><h2 id="chapter-1">如何理解「公式已確認」</h2>
+<p>這項研究包含兩個可以分別判定的問題：一是給定規則能否穩定算出安星位置與四化表；二是古代編表者是否確實使用了這套規則。</p>
+<p>目前已確認的成果，是安星公式與四化重建模型在各自明列的條件下可以計算、可以重跑，並能得到既定版本的結果。歷史上的生成過程，則須逐步核對原文。某些古書直接保存操作口訣；某些古書只保存數理材料或成品表；還有一些連接步驟是本研究的形式化重建。</p>
+<p>因此，本文採用以下標記：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>標記</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>古籍規則／現代形式化</strong></td>
+<td>古書有對應口訣、表值或安星圖；本文用現代數學記號表達。</td>
+</tr>
+<tr>
+<td><strong>古典河洛數理</strong></td>
+<td>數配、方位或生成數有古典書籍來源；仍須另判定其四化用途。</td>
+</tr>
+<tr>
+<td><strong>近代河洛橋接</strong></td>
+<td>四化與河圖數對的指派來自近代術數文獻，不能寫成《易經》直接規定。</td>
+</tr>
+<tr>
+<td><strong>重建公式，待古文驗證</strong></td>
+<td>計算已成立，但未見古文直接命令以此方法生成該四化。</td>
+</tr>
+<tr>
+<td><strong>條件成立</strong></td>
+<td>唯一性或完整命中依賴指定的母表、星池、版本與選取規則。</td>
+</tr>
+</tbody></table></div>
+<p>本文的「10／10」表示十個天干的輸出與指定基準表逐格一致，不是準確預測人生事件的比例，也不是證明古人使用過同一公式。</p>
+<p>本文主要處理：已知紫微起點後的十四主星安置，以及十干祿權科忌的表格重建。出生日期換算、五行局定局、生日求紫微起點、閏月與子時換日，不在本篇重新確認的範圍內。</p>
+<h2 id="chapter-2">先區分三種數字座標</h2>
+<p>研究中最容易混淆的是：同一個天干或宮位，可以在不同系統裡取得不同數字。本文明確分開三套座標。</p>
+<h3>十二地支的位置座標</h3>
+<p>為方便計算，定義：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>地支</th>
+<th align="right">子</th>
+<th align="right">丑</th>
+<th align="right">寅</th>
+<th align="right">卯</th>
+<th align="right">辰</th>
+<th align="right">巳</th>
+<th align="right">午</th>
+<th align="right">未</th>
+<th align="right">申</th>
+<th align="right">酉</th>
+<th align="right">戌</th>
+<th align="right">亥</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位置編號</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">7</td>
+<td align="right">8</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">11</td>
+</tr>
+</tbody></table></div>
+<p>順行為加一，逆行為減一。所有宮位結果取模12，超過十一回到子，低於零則由亥接續。</p>
+<p><strong>備註：這是現代位置編碼，不是河圖生數。</strong>子編為0，並不否定坎宮在九宮數中為1；兩者描述的對象不同。</p>
+<h3>十天干的循環索引</h3>
+<p>以 <span class="math-inline">g</span> 表示天干，以 <span class="math-inline">i(g)</span> 表示它在十干循環中的數字索引，定義：</p>
+<div class="formula" role="math">i(甲)=0,<wbr> i(乙)=1,<wbr> …,<wbr> i(癸)=9</div>
+<p>以 <span class="math-inline">prev(g)</span> 表示循環中的前一干，例如 <span class="math-inline">prev(甲)=癸</span>、<span class="math-inline">prev(乙)=甲</span>。數字索引的關係為：</p>
+<div class="formula" role="math">i(prev(g))=(i(g)+9) mod 10</div>
+<p>取模10作用於數字索引；星名與天干名稱本身不做餘數運算。</p>
+<p><strong>備註：這也是現代索引，不是天干的河圖陰陽數。</strong>另有古典依次配甲一、乙二至癸十的數序，見《普濟方》〈定數歌括〉；那套一至十序列可供本研究的生、成數分段模型使用，但不能與下一項混寫。<a class="cite" href="#source-9" aria-label="書籍來源 9">[9]</a></p>
+<h3 id="stem-hetu">天干的五行陰陽數</h3>
+<p>本研究使用的另一套古典配數為：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>天干</th>
+<th align="right">甲</th>
+<th align="right">乙</th>
+<th align="right">丙</th>
+<th align="right">丁</th>
+<th align="right">戊</th>
+<th align="right">己</th>
+<th align="right">庚</th>
+<th align="right">辛</th>
+<th align="right">壬</th>
+<th align="right">癸</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>河圖五行陰陽數 <span class="math-inline">H(g)</span></td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">2</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">6</td>
+</tr>
+</tbody></table></div>
+<p class="formula-note"><strong>【古典河洛數理】來源：元保巴《易源奧義》所列「甲三乙八、丙七丁二、戊五己十、庚九辛四、壬一癸六」。</strong><a class="cite" href="#source-4" aria-label="書籍來源 4">[4]</a></p>
+<p>因此乙、壬、癸可以依這套數配表示為8、1、6。這三個數字不是乙、壬、癸的普通排列序號。</p>
+<h3>公式符號怎麼讀</h3>
+<div class="table-wrap"><table><thead><tr><th>符號</th><th>本文的意思</th></tr></thead><tbody>
+<tr><td>i(g)、H(g)</td><td>分別為天干的循環索引與河圖五行陰陽數，兩者不能互換。</td></tr>
+<tr><td>b(e)、m(e)</td><td>e 表示水、火、木、金、土其中一行；b(e) 是該行的生數，m(e) 是化科重建模型分配給該行的名額。</td></tr>
+<tr><td>M、h</td><td>M 是農曆月份（1至12）；h 是時支索引（子時0至亥時11）。</td></tr>
+<tr><td>mod、≡</td><td>mod 表示取非負餘數，例如 −1 mod 12＝11；≡ 表示在指定循環中同餘，也就是落在相同位置。</td></tr>
+<tr><td>[…]、{…}</td><td>方括號列出有順序的數列或星曜表；大括號表示不計排列次序的集合。來源旁的 [1] 等則是引用編號。</td></tr>
+<tr><td>3／8、10／10</td><td>河圖語境中的3／8表示「3與8」這組生、成數；命中比較中的10／10表示十格全部相符。須依語境閱讀，不一律當成除法。</td></tr>
+</tbody></table></div>
+<h2 id="chapter-3">十四主星安星公式</h2><figure id="star-chart"><div class="figure-title">十二宮安星圖：改變紫微起點，觀察兩套星系</div><div class="controls"><label for="anchor">紫微起點 <select id="anchor"><option value="2">寅</option><option value="0">子</option><option value="1">丑</option><option value="3">卯</option><option value="4">辰</option><option value="5">巳</option><option value="6">午</option><option value="7">未</option><option value="8">申</option><option value="9">酉</option><option value="10">戌</option><option value="11">亥</option></select></label><label for="highlight">三合群 <select id="highlight"><option value="all">完整十四主星</option><option value="zi">紫微・武曲・廉貞</option><option value="sha">貪狼・七殺・破軍</option></select></label></div><div class="palaces" id="palaces"><div class="palace" data-branch="巳"><span class="branch">巳</span><div class="stars"><span class="star fu">巨門</span></div></div><div class="palace" data-branch="午"><span class="branch">午</span><div class="stars"><span class="star zi">廉貞</span><span class="star fu">天相</span></div></div><div class="palace" data-branch="未"><span class="branch">未</span><div class="stars"><span class="star fu">天梁</span></div></div><div class="palace" data-branch="申"><span class="branch">申</span><div class="stars"><span class="star fu">七殺</span></div></div><div class="palace" data-branch="辰"><span class="branch">辰</span><div class="stars"><span class="star fu">貪狼</span></div></div><div class="palace" data-branch="酉"><span class="branch">酉</span><div class="stars"><span class="star zi">天同</span></div></div><div class="palace" data-branch="卯"><span class="branch">卯</span><div class="stars"><span class="star fu">太陰</span></div></div><div class="palace" data-branch="戌"><span class="branch">戌</span><div class="stars"><span class="star zi">武曲</span></div></div><div class="palace" data-branch="寅"><span class="branch">寅</span><div class="stars"><span class="star zi">紫微</span><span class="star fu">天府</span></div></div><div class="palace" data-branch="丑"><span class="branch">丑</span><div class="stars"><span class="star zi">天機</span></div></div><div class="palace" data-branch="子"><span class="branch">子</span><div class="stars"><span class="star fu">破軍</span></div></div><div class="palace" data-branch="亥"><span class="branch">亥</span><div class="stars"><span class="star zi">太陽</span></div></div><div class="chart-center"><span class="seal">紫府安星</span><span id="chart-state" aria-live="polite">紫微寅・天府寅</span><small>紫系逆行<br>府系順行</small></div></div><div class="legend"><span><i class="swatch zi"></i>紫微六星</span><span><i class="swatch fu"></i>天府八星</span></div><figcaption>按古安星訣的現代形式化計算。此圖以已知紫微位置為起點，不處理出生日期、五行局或換日。來源：《捷覽》安紫府圖、南北斗安星訣；《全書》安天府圖。</figcaption></figure>
+<h3>紫微與天府的鏡射關係</h3><figure id="mirror-diagram"><div class="figure-title">寅申軸鏡射：紫微子，天府辰</div><svg class="mirror" viewBox="0 0 400 365" role="img" aria-label="子在下、午在上、卯在左、酉在右的十二宮方位；紫微在子，天府在辰，關於寅申軸鏡射"><defs><marker id="arr-1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#92693b"/></marker></defs><circle cx="200" cy="185" r="140" fill="none" stroke="#d7ccbe" stroke-width="2"/><line x1="57" y1="267.56" x2="343" y2="102.44" stroke="#c09a66" stroke-width="2" stroke-dasharray="5 6"/><circle cx="200.00" cy="325.00" r="20" fill="#e8d7b8" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="200.00" y="332.00" text-anchor="middle" font-size="21">子</text><circle cx="130.00" cy="306.24" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="130.00" y="313.24" text-anchor="middle" font-size="21">丑</text><circle cx="78.76" cy="255.00" r="20" fill="#f7f2e9" stroke="#92693b" stroke-width="2"/><text class="mirror-branch" x="78.76" y="262.00" text-anchor="middle" font-size="21">寅</text><circle cx="60.00" cy="185.00" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="60.00" y="192.00" text-anchor="middle" font-size="21">卯</text><circle cx="78.76" cy="115.00" r="20" fill="#e8d7b8" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="78.76" y="122.00" text-anchor="middle" font-size="21">辰</text><circle cx="130.00" cy="63.76" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="130.00" y="70.76" text-anchor="middle" font-size="21">巳</text><circle cx="200.00" cy="45.00" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="200.00" y="52.00" text-anchor="middle" font-size="21">午</text><circle cx="270.00" cy="63.76" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="270.00" y="70.76" text-anchor="middle" font-size="21">未</text><circle cx="321.24" cy="115.00" r="20" fill="#f7f2e9" stroke="#92693b" stroke-width="2"/><text class="mirror-branch" x="321.24" y="122.00" text-anchor="middle" font-size="21">申</text><circle cx="340.00" cy="185.00" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="340.00" y="192.00" text-anchor="middle" font-size="21">酉</text><circle cx="321.24" cy="255.00" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="321.24" y="262.00" text-anchor="middle" font-size="21">戌</text><circle cx="270.00" cy="306.24" r="20" fill="#f7f2e9" stroke="#d7ccbe" stroke-width="1"/><text class="mirror-branch" x="270.00" y="313.24" text-anchor="middle" font-size="21">亥</text><path d="M200 302 Q67 271 94 137" fill="none" stroke="#92693b" stroke-width="2" marker-end="url(#arr-1)"/><text class="mirror-equation" x="220" y="210" text-anchor="middle" font-size="22">f ≡ 4 − z</text><text class="mirror-mod" x="220" y="236" text-anchor="middle" font-size="16">mod 12</text></svg><p class="mirror-reading">紫微在子（z＝0）→ 天府在辰（f＝4）<br>寅、申為同宮固定點</p><figcaption>圖採子下、午上、卯左、酉右的十二宮方位，虛線為寅申鏡射軸。位置編號仍採子0至亥11；模12是宮位循環記法，不是河圖生數。鏡射公式來自古安星圖的數學轉寫。</figcaption></figure>
+<p>設紫微的位置為 <span class="math-inline">z</span>，天府的位置為 <span class="math-inline">f</span>，則：</p>
+<div class="formula" role="math">f≡4−z（mod 12）</div>
+<p class="formula-note"><strong>【古籍規則／現代形式化；不是河洛生成數公式】</strong></p>
+<p>來源為《新刻纂集紫微斗數捷覽》〈安紫府圖〉與《紫微斗數全書》〈安天府圖〉。兩者所示關係包括紫微在寅或申時紫府同宮，紫微在子時天府在辰，紫微在丑時天府在卯，紫微在卯時天府在丑。<a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a><a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a></p>
+<p>《全書》安天府法的文字為「天府惟寅申二宮紫府同宮，餘宮俱各填斜作對」。這裡的「作對」須配合安星圖理解，不能一律當成正沖六宮。</p>
+<p>代入公式：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>紫微位置</th>
+<th align="right"><span class="math-inline">z</span></th>
+<th align="right">天府 <span class="math-inline">(4−z) mod 12</span></th>
+<th>天府地支</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>子</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td>辰</td>
+</tr>
+<tr>
+<td>丑</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td>卯</td>
+</tr>
+<tr>
+<td>寅</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td>寅</td>
+</tr>
+<tr>
+<td>卯</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td>丑</td>
+</tr>
+<tr>
+<td>申</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td>申</td>
+</tr>
+</tbody></table></div>
+<p>同宮條件為 <span class="math-inline">z=f</span>，即 <span class="math-inline">2z≡4（mod 12）</span>，解為寅2、申8。</p>
+<p>這個鏡射關係直接描述古安星圖；模運算記號是本文的現代寫法。至於古人是否先以鏡射幾何設計整套星系，<strong>待古文驗證</strong>。</p>
+<h3>紫微六星的逆行模板</h3>
+<p>《捷覽》〈布南北二斗諸星訣〉保存：</p>
+<blockquote>
+<p>紫微天機星逆行，隔一陽武天同情。又隔二位廉貞位，空三便是紫微星。</p>
+</blockquote>
+<p>依其逐宮示例，轉寫為：</p>
+<div class="formula" role="math">(紫微,<wbr>天機,<wbr>太陽,<wbr>武曲,<wbr>天同,<wbr>廉貞) ≡ z−(0,<wbr>1,<wbr>3,<wbr>4,<wbr>5,<wbr>8)（mod 12） </div>
+<p class="formula-note"><strong>【古籍規則／現代形式化；不是河洛公式】來源：《捷覽》〈布南北二斗諸星訣〉，《全書》亦有同系口訣。</strong><a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a><a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a></p>
+<p>「隔一」表示兩星之間空一宮，故天機在逆行第一步，太陽在第三步；「又隔二位」表示天同與廉貞之間空兩宮，廉貞落第八步。不能把空宮數直接當成總位移步數。</p>
+<p>以紫微在寅為例：紫微寅、天機丑、太陽亥、武曲戌、天同酉、廉貞午，之後空巳辰卯三宮，回到寅。</p>
+<h3>天府八星的順行模板</h3>
+<p>同系安星訣為：</p>
+<blockquote>
+<p>天府太陰順貪狼，巨門天相與天梁，七殺空三破軍位，隔宮望見天府鄉。</p>
+</blockquote>
+<p>轉寫為：</p>
+<div class="formula" role="math">(天府,<wbr>太陰,<wbr>貪狼,<wbr>巨門,<wbr>天相,<wbr>天梁,<wbr>七殺,<wbr>破軍) ≡ f+(0,<wbr>1,<wbr>2,<wbr>3,<wbr>4,<wbr>5,<wbr>6,<wbr>10)（mod 12） </div>
+<p class="formula-note"><strong>【古籍規則／現代形式化；不是河洛公式】來源：《捷覽》與《全書》的南北斗安星訣。不同傳本末句有異文，本文以逐宮示例核定位移。</strong><a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a><a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a></p>
+<p>以天府在寅為例：天府寅、太陰卯、貪狼辰、巨門巳、天相午、天梁未、七殺申；空酉戌亥三宮，破軍在子；再空丑，回到天府寅。</p>
+<h3>固定三合的數學確認</h3>
+<p>紫微、武曲、廉貞的位置分別為 <span class="math-inline">z,<wbr>z−4,<wbr>z−8</span>，三者永遠各隔四宮。貪狼、七殺、破軍的位置分別為 <span class="math-inline">f+2,<wbr>f+6,<wbr>f+10</span>，同樣永遠各隔四宮。</p>
+<p>將紫微遍歷十二宮，並檢查十四星所有 <span class="math-inline">C(14,<wbr>3)=364</span> 組三星組合。全域固定三合只得到：</p>
+<ol>
+<li>紫微—武曲—廉貞。</li>
+<li>貪狼—七殺—破軍。</li>
+</ol>
+<p class="formula-note"><strong>【由古籍安星模板推出的數學性質】</strong>《捷覽》另有「只恐三方殺破狼」的文字，支持古人已認識殺破狼三方結構；但「古人先設三合，再填其餘星」仍是另一個歷史問題。</p>
+<h3>兩套模板的共同壓縮式</h3>
+<p>可把逆行／順行的非負步數集合寫成：</p>
+<div class="formula" role="math">K={0,<wbr>1,<wbr>3,<wbr>4,<wbr>5},<wbr> x=2</div>
+<div class="formula" role="math">P=K∪{x+6}={0,<wbr>1,<wbr>3,<wbr>4,<wbr>5,<wbr>8}</div>
+<div class="formula" role="math">F=K∪{x,<wbr>x+4,<wbr>x+8}={0,<wbr>1,<wbr>2,<wbr>3,<wbr>4,<wbr>5,<wbr>6,<wbr>10}</div>
+<p class="formula-note"><strong>【現代結構壓縮，待古文驗證；屬十二宮對宮／三合幾何，不是河圖生、成數】</strong></p>
+<p>這個寫法表明：共同骨架之外，紫微側將特殊槽2移到其對宮8；天府側保留特殊槽2，並展開2、6、10三合軌道。它能精確重現模板，但尚不能稱為古人口訣。</p>
+<p>另外，本研究在給定星序、兩組固定三合與紫府同宮時共同覆蓋十二宮等條件下，曾得到模板的唯一解。此處的唯一性是條件內的數學結果；不能把「紫府同宮時覆蓋十二宮」擴張成所有命盤均無空宮。</p>
+<h2 id="chapter-4">文昌、文曲、左輔、右弼的安星結構</h2>
+<p>四顆星之所以與化科研究有關，首先是因為其安星法具有清楚的辰順、戌逆配對。</p>
+<p>成熟《全書》同系規則是：文昌由戌起子時逆數，文曲由辰起子時順數；左輔由辰起正月順數，右弼由戌起正月逆數。<a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a></p>
+<p>若 <span class="math-inline">h=0</span> 表示子時，依時支順序至亥時為11；農曆月份 <span class="math-inline">M=1,<wbr>…,<wbr>12</span>，則：</p>
+<div class="formula" role="math">文昌≡10−h,<wbr> 文曲≡4+h（mod 12）</div>
+<div class="formula" role="math">左輔≡4+(M−1),<wbr> 右弼≡10−(M−1)（mod 12）</div>
+<p class="formula-note"><strong>【古籍規則／現代形式化；不是河洛公式】</strong></p>
+<p>早期《紫微數／玄藪》系還有另一層：龍池一名文曲、鳳閣一名文昌，三台對應左輔、八座對應右弼；三台八座的部分安法在月份起點之後再數生日。<a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a></p>
+<p>因此，化科研究中的「時系／月日系」是早期文本的結構分類，不能把早期三台八座的生日步驟不加區別地搬進上述成熟輔弼月起公式。現代同名龍池、鳳閣、三台、八座，也不能一律按此舊名對應合併。</p>
+<h2 id="chapter-5">化祿：穩定母表與公式的起點</h2>
+<p>按甲至癸排列，已確認的祿母表是：</p>
+<div class="formula" role="math">L=[廉貞,<wbr>天機,<wbr>天同,<wbr>太陰,<wbr>貪狼,<wbr>武曲,<wbr>太陽,<wbr>巨門,<wbr>天梁,<wbr>破軍]</div>
+<p class="formula-note"><strong>【古籍直接表值】來源：乙亥字《紫微數》七欄表、《捷覽》四化訣、南陽堂明刊《全書》四化訣。</strong><a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a><a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a><a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a></p>
+<p>這三組研究材料的祿欄十格相同，因此本研究將 <span class="math-inline">L</span> 固定為母資料。寫成 <span class="math-inline">L(g)</span> 表示取得該天干的祿曜。</p>
+<p>目前這一步確認的是祿表的穩定性；本文沒有另行宣稱已找到一條不使用母表、從河圖數字直接生成全部祿曜的古公式。</p>
+<h2 id="chapter-6">化權：祿前一干、星池更新與816局部循環</h2>
+<h3>十變曜中「權＝祿前一干」的來源</h3>
+<p>《星學大成》卷一的十變曜序列是：祿、暗、福、耗、蔭、貴、刑、印、囚、權；天祿對應的十干曜序為火、孛、木、金、土、月、水、炁、計、羅。<a class="cite" href="#source-5" aria-label="書籍來源 5">[5]</a></p>
+<p>記其七政四餘祿列為 <span class="math-inline">T(g)</span>。十個功能列依序對應天干索引位移0至9；天權位移9，在十干循環中等同取前一干。因此：</p>
+<div class="formula" role="math">T<sub>權</sub>(g)=T(prev(g))</div>
+<p class="formula-note"><strong>【古籍表值／現代形式化；屬十變曜功能序列，不是河洛公式】</strong>乙亥字《紫微數》末部十干變曜表亦保存這種完整循環結構。<a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a><a class="cite" href="#source-5" aria-label="書籍來源 5">[5]</a></p>
+<p>然而，將這個算子套到斗數固定星的祿母表，仍須另加一步：</p>
+<div class="formula" role="math">Q<sub>0</sub>(g)=L(prev(g))</div>
+<p class="formula-note"><strong>【算子轉用的重建公式，待古文驗證】</strong>古籍直接支持十變曜的前一干關係；未見直接命令將固定星祿欄代入同一算子。兩者不可省略區別。</p>
+<p>代入 <span class="math-inline">L</span> 得：</p>
+<div class="formula" role="math">Q<sub>0</sub>=[破軍,<wbr>廉貞,<wbr>天機,<wbr>天同,<wbr>太陰,<wbr>貪狼,<wbr>武曲,<wbr>太陽,<wbr>巨門,<wbr>天梁]</div>
+<p>這個骨架與成熟化權命中7／10。它與早期《紫微數》的舊權欄只有1／10一致，故不能說是把舊權欄原樣延續下來。</p>
+<h3>廉貞退出，紫微加入</h3>
+<p>定義替換算子 <span class="math-inline">S</span>：只把 <span class="math-inline">Q<sub>0</sub></span> 中唯一的廉貞換成紫微，其餘保留：</p>
+<div class="formula" role="math">B=S(Q<sub>0</sub>)=[破軍,<wbr>紫微,<wbr>天機,<wbr>天同,<wbr>太陰,<wbr>貪狼,<wbr>武曲,<wbr>太陽,<wbr>巨門,<wbr>天梁]</div>
+<p class="formula-note"><strong>【重建公式，待古文驗證】</strong></p>
+<p>《捷覽》卷三〈斗數指南總論〉有「紫微，北斗之主宰」與「主星若動則眾星奔馳」；〈斗數骨髓賦〉以太極為群宿眾星之主。這些文字支持紫微的主宰與權柄角色，但未直接寫成「化權去廉取紫」的操作指令。<a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a></p>
+<h3>816如何連到乙、壬、癸</h3><figure id="luoshu-diagram"><div class="figure-title">洛書北側三數：艮8・坎1・乾6</div><div class="luoshu"><div class="orientation">南</div><div class="nine-grid"><div class=""><b>4</b><span>巽</span></div><div class=""><b>9</b><span>離</span></div><div class=""><b>2</b><span>坤</span></div><div class=""><b>3</b><span>震</span></div><div class=""><b>5</b><span>中</span></div><div class=""><b>7</b><span>兌</span></div><div class="north"><b>8</b><span>艮・丑</span></div><div class="north"><b>1</b><span>坎・子</span></div><div class="north"><b>6</b><span>乾・亥</span></div></div><div class="orientation">北　　東在左・西在右</div></div><figcaption>【古典河洛數理】後天九宮方位；天干乙8、壬1、癸6據《易源奧義》。取北側三位作化權作用範圍，仍是待古文驗證的重建步驟。</figcaption></figure>
+<p>依《易源奧義》的天干數配：</p>
+<div class="formula" role="math">H(乙)=8,<wbr> H(壬)=1,<wbr> H(癸)=6</div>
+<p class="formula-note"><strong>【古典河洛數理】</strong><a class="cite" href="#source-4" aria-label="書籍來源 4">[4]</a></p>
+<p>依後天九宮，艮8、坎1、乾6；方位上，丑取艮、子取坎、亥取乾，可寫成：</p>
+<div class="formula" role="math">丑→子→亥 ↔ 8→1→6</div>
+<p class="formula-note"><strong>【古典河洛方位＋現代對應形式化】</strong>這裡是取十二支所屬八卦方位，不是把十二宮與九宮建立一對一等同關係。<a class="cite" href="#source-4" aria-label="書籍來源 4">[4]</a></p>
+<p>《三易備遺》又有「衡而數之，八一六是為十五」，直接證明816在古典洛書中成組；《星學大成》〈眾星拱北〉以子為北極中心，亥丑為兩翼，提供北方三位的星命操作先例。<a class="cite" href="#source-6" aria-label="書籍來源 6">[6]</a><a class="cite" href="#source-5" aria-label="書籍來源 5">[5]</a></p>
+<p>但是，下列兩項組合仍須標明：</p>
+<ul>
+<li>因紫微的北斗主宰角色，將化權重掛範圍選為亥子丑：<strong>待古文驗證</strong>。</li>
+<li>將紫微安星的逆行方向轉用到這三格化權：<strong>待古文驗證</strong>。</li>
+</ul>
+<p>另須注意：816是本公式的局部座標序列，不等於「化權的河圖數對」。近代四化橋接所配的化權數對是2／7，兩者用途不同。</p>
+<h3>星曜沿816移動，而非把表值讀取方向寫反</h3><figure id="quan-cycle"><div class="figure-title">化權閉環：紫微、巨門、天梁各向下一格移動</div><div class="mobile-figure mobile-cycle"><div><b>乙 · 8</b><span>紫微</span><span>→</span><strong>壬 · 1</strong></div><div><b>壬 · 1</b><span>巨門</span><span>→</span><strong>癸 · 6</strong></div><div><b>癸 · 6</b><span>天梁</span><span>→</span><strong>乙 · 8</strong></div><p>8 → 1 → 6 → 8　閉合搬移</p></div><svg class="cycle" viewBox="0 0 570 420" role="img" aria-label="乙8紫微移到壬1，壬1巨門移到癸6，癸6天梁移到乙8"><defs><marker id="arr-2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#92693b"/></marker></defs><path d="M329 98 Q451 127 469 260" stroke="#92693b" stroke-width="2.5" fill="none" marker-end="url(#arr-2)"/><path d="M413 317 Q287 390 160 317" stroke="#92693b" stroke-width="2.5" fill="none" marker-end="url(#arr-2)"/><path d="M102 260 Q122 123 236 98" stroke="#92693b" stroke-width="2.5" fill="none" marker-end="url(#arr-2)"/><rect x="210" y="25" width="150" height="130" rx="12" fill="#f7f2e9" stroke="#d5c4aa"/><text x="285" y="62" text-anchor="middle" font-size="29" fill="#92693b">8 · 乙</text><text x="285" y="91" text-anchor="middle" font-size="15">原值 紫微</text><text x="285" y="124" text-anchor="middle" font-size="18" font-weight="bold">新值 天梁</text><rect x="385" y="220" width="150" height="130" rx="12" fill="#f7f2e9" stroke="#d5c4aa"/><text x="460" y="257" text-anchor="middle" font-size="29" fill="#92693b">1 · 壬</text><text x="460" y="286" text-anchor="middle" font-size="15">原值 巨門</text><text x="460" y="319" text-anchor="middle" font-size="18" font-weight="bold">新值 紫微</text><rect x="35" y="220" width="150" height="130" rx="12" fill="#f7f2e9" stroke="#d5c4aa"/><text x="110" y="257" text-anchor="middle" font-size="29" fill="#92693b">6 · 癸</text><text x="110" y="286" text-anchor="middle" font-size="15">原值 天梁</text><text x="110" y="319" text-anchor="middle" font-size="18" font-weight="bold">新值 巨門</text><text x="284" y="255" text-anchor="middle" font-size="22">8 → 1 → 6 → 8</text><text x="285" y="283" text-anchor="middle" font-size="14">三顆星保存・七格不動</text><text x="400" y="154" font-size="14">紫微</text><text x="280" y="374" font-size="14">巨門</text><text x="128" y="154" font-size="14">天梁</text></svg><figcaption>【河洛定位＋現代閉合置換】星曜沿箭頭搬移；每格取上一格的原值。整體生成已驗算，古代編表者的直接重掛指令待古文驗證。</figcaption></figure>
+<p>更新後的 <span class="math-inline">B</span> 在三格為：乙8紫微、壬1巨門、癸6天梁。令星曜沿8→1→6→8搬動：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>移動前</th>
+<th>移動方向</th>
+<th>移動後</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>乙8的紫微</td>
+<td>8→1</td>
+<td>壬1得紫微</td>
+</tr>
+<tr>
+<td>壬1的巨門</td>
+<td>1→6</td>
+<td>癸6得巨門</td>
+</tr>
+<tr>
+<td>癸6的天梁</td>
+<td>6→8</td>
+<td>乙8得天梁</td>
+</tr>
+</tbody></table></div>
+<p>完整公式是：</p>
+<div class="formula" role="math"><span class="case-formula"><b>Q(g) =</b><span><span>B(癸)　若 g＝乙</span><span>B(乙)　若 g＝壬</span><span>B(壬)　若 g＝癸</span><span>B(g)　其餘天干</span></span></span></div>
+<p class="formula-note"><strong>【河洛定位＋閉合置換的重建公式，待古文驗證】</strong></p>
+<p>因此：</p>
+<div class="formula" role="math">Q=[破軍,<wbr>天梁,<wbr>天機,<wbr>天同,<wbr>太陰,<wbr>貪狼,<wbr>武曲,<wbr>太陽,<wbr>紫微,<wbr>巨門]</div>
+<p>成熟權表十格全部吻合，且同干祿權科忌不重。</p>
+<h3>驗證所確認的範圍</h3>
+<p>逐項驗算得到：完整公式10／10；不做局部循環7／10；採反方向7／10；不做廉換紫9／10；不做祿前一干骨架0／10。若只走8→1→6而不回8，會丟失或重複星曜，不能保持三顆星的多重集合。</p>
+<p>九宮數1至9任取三數共有84組，每組兩個循環方向，共168候選。以 H(g) 對應天干時，這個候選範圍不含配數10的己干；它並非十干中任取三干的全部組合。固定基底 <span class="math-inline">B</span> 後，事後比對成熟權表，只有一個完整命中。這項唯一性限於「九宮數1至9中任選三格做一次三循環」的候選空間，不能擴張成所有可能公式都只有這一個。</p>
+<p>尤其，同干四化不重單獨在168候選中仍有29個通過；它不能獨自決定816。局部範圍與方向必須另外給定。</p>
+<p>程序的生成階段未讀成熟權表選參數，但研究是在已知成熟表的背景下進行，故不稱盲測。可以確認的是：<strong>既定規則已完整、可重現地生成成熟權表；古代編表者將各步接成這條程序的直接文字，仍待古文驗證。</strong></p>
+<h2 id="chapter-7">化科：科3／8名額公式、成對星曜與版本選擇</h2>
+<h3>科3／8的來源層級</h3>
+<p>河圖五行生、成數為水1／6、火2／7、木3／8、金4／9、土5／10，屬古典數理材料。四化配為忌1／6、權2／7、科3／8、祿4／9，則是近代河洛／飛星系統的橋接。<a class="cite" href="#source-7" aria-label="書籍來源 7">[7]</a><a class="cite" href="#source-8" aria-label="書籍來源 8">[8]</a></p>
+<p>科3／8的近代來源，可見蔡明宏《斗數秘儀下廚房》及《華山欽天四化紫微斗數飛星秘儀》相關材料。此處未核定所引用材料的出版版次與頁碼。</p>
+<p>因此，「木的河圖數對是3／8」與「化科採3／8」不能當成同一條古籍證據。後者作為明代四化生成前提，<strong>待古文驗證</strong>。</p>
+<h3>五行名額公式</h3><figure id="ke-quota"><div class="figure-title">化科五行名額：水4・火0・木1・金2・土3</div><div class="quota-bars"><div class="quota-row"><b>水</b><div class="units"><span class="article-style-1 unit filled"></span><span class="article-style-1 unit filled"></span><span class="article-style-1 unit filled"></span><span class="article-style-1 unit filled"></span></div><strong>4</strong></div><div class="quota-row"><b>火</b><div class="units"><span class="article-style-2 unit "></span><span class="article-style-2 unit "></span><span class="article-style-2 unit "></span><span class="article-style-2 unit "></span></div><strong>0</strong></div><div class="quota-row"><b>木</b><div class="units"><span class="article-style-3 unit filled"></span><span class="article-style-3 unit "></span><span class="article-style-3 unit "></span><span class="article-style-3 unit "></span></div><strong>1</strong></div><div class="quota-row"><b>金</b><div class="units"><span class="article-style-4 unit filled"></span><span class="article-style-4 unit filled"></span><span class="article-style-4 unit "></span><span class="article-style-4 unit "></span></div><strong>2</strong></div><div class="quota-row"><b>土</b><div class="units"><span class="article-style-5 unit filled"></span><span class="article-style-5 unit filled"></span><span class="article-style-5 unit filled"></span><span class="article-style-5 unit "></span></div><strong>3</strong></div></div><div class="figure-equation">m(e) =（五行生數 + 3）mod 5</div><div class="caption-tags"><span>總名額10</span><span>科3與成數8同餘</span><span>火0表示無剩餘名額</span></div><figcaption>【河洛數理重建・待古文驗證】此式先決定五行出現次數，未單獨指定天干位置或星名。名額圖中的方格只表示數量。</figcaption></figure>
+<p>記五行生數為：</p>
+<div class="formula" role="math">b(水)=1,<wbr> b(火)=2,<wbr> b(木)=3,<wbr> b(金)=4,<wbr> b(土)=5</div>
+<p>化科候選名額為：</p>
+<div class="formula" role="math">m(e)=(b(e)+3) mod 5,<wbr> m(e)∈{0,<wbr>1,<wbr>2,<wbr>3,<wbr>4}</div>
+<p class="formula-note"><strong>【河洛數理重建公式，待古文驗證】</strong>古典五行配數有來源；加科3、循五後把餘數讀成十干表的五行出現次數，是本研究的橋接。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>五行</th>
+<th align="right">生數</th>
+<th align="right">加科3</th>
+<th align="right">循五名額</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>水</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>火</td>
+<td align="right">2</td>
+<td align="right">5</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>木</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>金</td>
+<td align="right">4</td>
+<td align="right">7</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>土</td>
+<td align="right">5</td>
+<td align="right">8</td>
+<td align="right">3</td>
+</tr>
+</tbody></table></div>
+<p>總名額為10。科的成數8與3在模5下同餘，因此用8計算也得到同一結果。</p>
+<p>這個公式確認的是頻數，尚未單獨指定哪一干放哪一行，更沒有直接指定承化星名。</p>
+<h3>以古典一至五循環表示「火0」</h3>
+<p>若先用一至五表示循環，定義：</p>
+<div class="formula" role="math">r<sub>5</sub>(n)=1+((n−1) mod 5)</div>
+<p>則 <span class="math-inline">r<sub>5</sub>(b(e)+3)</span> 得 <span class="math-inline">[4,<wbr>5,<wbr>1,<wbr>2,<wbr>3]</span>，合計15。要求各項保持模5同餘、非負，總名額固定為十干10席，則只有火的5能減去完整五週期，唯一得到 <span class="math-inline">[4,<wbr>0,<wbr>1,<wbr>2,<wbr>3]</span>。</p>
+<p class="formula-note"><strong>【河洛數理＋現代正規化，待古文驗證】</strong></p>
+<p>《唐六典》五兆策法與敦煌《五兆經法要決》提供五五除之、五行及十干五對的算法先例；明趙迎《範圍數》保存滿者過位進除、除後取剩數定爻的用法；元熊朋來《經說》〈評潛虛揲法〉有數值展開為配置項數的同型結構。<a class="cite" href="#source-10" aria-label="書籍來源 10">[10]</a><a class="cite" href="#source-11" aria-label="書籍來源 11">[11]</a></p>
+<p>這些來源支持古典算法材料，未直接規定「十干化科按餘數分配五行名額」。</p>
+<h3>從早期科骨架選出必改位置</h3>
+<p>乙亥字《紫微數》早期科欄為：</p>
+<div class="formula" role="math">K<sub>0</sub>=[武曲,<wbr>紫微,<wbr>文昌,<wbr>天機,<wbr>文昌,<wbr>天梁,<wbr>廉貞,<wbr>文曲,<wbr>太陽,<wbr>太陰]</div>
+<p class="formula-note"><strong>【古籍直接表值，按本研究舊名正規化】</strong><a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a></p>
+<p>本模型採用下表所列的固定星五行，而不混用七政舊曜的五行：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>科欄星曜</th>
+<th>五行</th>
+<th>科欄星曜</th>
+<th>五行</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>武曲、文昌</td>
+<td>金</td>
+<td>天機</td>
+<td>木</td>
+</tr>
+<tr>
+<td>紫微、天梁、左輔、天府</td>
+<td>土</td>
+<td>太陰、文曲、右弼、天同</td>
+<td>水</td>
+</tr>
+<tr>
+<td>廉貞、太陽</td>
+<td>火</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<p>文昌金、文曲水、左輔土、右弼水，有《紫微數》相關安星與星論條目支持。其餘採本研究已固定的成熟星曜五行定義；異文或其他術法五行不可無說明替換。<a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a><a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a></p>
+<p>早期科的五行頻數為水2、火2、木1、金3、土2。轉到目標水4、火0、木1、金2、土3，最少要改三格：兩個火位全部退出，再退出一個金位。</p>
+<p>兩個火位恰為庚廉貞、壬太陽，故庚壬必改；金位則在甲武曲、丙文昌、戊文昌三者中選一。名額公式至此尚不能單獨選出戊。</p>
+<h3>昌曲左右的配對規則補出戊與壬</h3><figure id="paired-stars"><div class="figure-title">昌曲左右的方向與時間層配對</div><div class="pair-matrix"><div></div><div class="pair-head">時系</div><div class="pair-head">月／生日系</div><div class="pair-head">戌起逆行</div><div><b>文昌</b><span>成熟科：丙</span></div><div><b>右弼</b><span>成熟科：戊</span></div><div class="pair-head">辰起順行</div><div><b>文曲</b><span>成熟科：辛</span></div><div><b>左輔</b><span>成熟科：壬</span></div></div><figcaption>安星方向有古籍支持；將兩方向各補齊時間層，作為化科選星條件，待古文驗證。此圖採《捷覽》左輔支；早期輔弼安法的生日步驟須與成熟月起法分開。</figcaption></figure>
+<p>早期安星法可整理成：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>安星方向</th>
+<th>時系</th>
+<th>月／生日系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>戌起逆行</td>
+<td>文昌</td>
+<td>右弼</td>
+</tr>
+<tr>
+<td>辰起順行</td>
+<td>文曲</td>
+<td>左輔</td>
+</tr>
+</tbody></table></div>
+<p>《普濟方》的甲一至癸十數序，配合《象山先生全集》的一至五生數、六至十成數，供本研究提出甲至戊取戌逆族、己至癸取辰順族的模型。<a class="cite" href="#source-9" aria-label="書籍來源 9">[9]</a></p>
+<p class="formula-note"><strong>【古典數序／生、成數＋成對承載星的重建規則，待古文驗證】</strong>這裡使用的是依序一至十分半，不能改用〈<a href="#stem-hetu">天干的五行陰陽數</a>〉中的 <span class="math-inline">H(g)</span> 分半。</p>
+<p>在保存丙文昌、辛文曲，並要求兩方向都補齊時系與月日系的條件下，戊文昌換成右弼，壬太陽換成左輔。右弼水、左輔土先補兩格後，唯一剩下的火位是庚，且五行缺額只剩一水，所以庚位須改用五行屬水的固定星。這裡的「水」是固定星的五行屬性，不是七政中的水星。</p>
+<p>所得完整五行向量為：</p>
+<div class="formula" role="math">[金,<wbr>土,<wbr>金,<wbr>木,<wbr>水,<wbr>土,<wbr>水,<wbr>水,<wbr>土,<wbr>水]</div>
+<p>驗算與兩個已核成熟支的十格五行完全一致。</p>
+<p>這條程序仍包含成對完備條件，並不是名額公式單獨推出全部星名或所有插入干。</p>
+<h3>庚科與壬科的版本選擇</h3>
+<p>兩個古本支的差別為：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>版本基準</th>
+<th>庚科</th>
+<th>庚忌</th>
+<th>壬科</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1581《捷覽》基準</td>
+<td>太陰</td>
+<td>天同</td>
+<td>左輔</td>
+</tr>
+<tr>
+<td>南陽堂明刊《全書》</td>
+<td>天同</td>
+<td>天相</td>
+<td>天府</td>
+</tr>
+</tbody></table></div>
+<p>兩支的庚科皆水，壬科皆土，故名額公式無法裁定星名版本。</p>
+<p>在《捷覽》支中，庚忌已為天同；若庚科的水行星曜候選限於太陰、天同，並要求同干四化不重，則庚科選太陰。壬位採昌曲左右配對完備條件，取左輔。</p>
+<p>《全書》支則由古本表值直接確認庚科天同、壬科天府。相關研究還有固定化氣主星覆蓋等版本結構解釋，但不能把它們寫成古代明文生成指令。</p>
+<p>因此完整化科公式可表述為「早期科骨架＋三格替換」，但須先指定版本條件：</p>
+<div class="formula" role="math">K<sub>捷覽</sub>=[武曲,<wbr>紫微,<wbr>文昌,<wbr>天機,<wbr>右弼,<wbr>天梁,<wbr>太陰,<wbr>文曲,<wbr>左輔,<wbr>太陰]</div>
+<div class="formula" role="math">K<sub>全書</sub>=[武曲,<wbr>紫微,<wbr>文昌,<wbr>天機,<wbr>右弼,<wbr>天梁,<wbr>天同,<wbr>文曲,<wbr>天府,<wbr>太陰]</div>
+<p class="formula-note"><strong>【成品表有古籍來源；重建選星步驟待古文驗證】</strong></p>
+<p>《捷覽》科欄兩次出現太陰是既定表值，不能另加「整欄十星不得重複」去改掉它。「同干四化不重」與「同一化欄不重星」是不同條件。</p>
+<h2 id="chapter-8">化忌：福槽骨架、印星池與受限選取</h2>
+<h3>福欄提供位置骨架</h3><figure id="ji-rewrite"><div class="figure-title">化忌四格改寫：保留六格，改寫甲乙丁戊</div><div class="rewrite-grid"><div class="rewrite-head">天干</div><div class="rewrite-head">早期福欄</div><div class="rewrite-head">成熟忌</div><b>甲</b><span>太陰</span><span class="new-star">太陽</span><b>乙</b><span>巨門</span><span class="new-star">太陰</span><b>丁</b><span>天梁</span><span class="new-star">巨門</span><b>戊</b><span>右弼</span><span class="new-star">天機</span></div><div class="rewrite-summary"><p><b>移位保存</b>太陰：甲→乙<br>巨門：乙→丁</p><p><b>星池更新</b>移出：天梁、右弼<br>移入：太陽、天機</p></div><figcaption>【受限重建・待古文驗證】唯一解依賴福槽、印星池、後五凍結、第一列克及月可取日等條件。這是星命功能規則，不是河洛名額公式。</figcaption></figure>
+<p>早期《紫微數》福欄為：</p>
+<div class="formula" role="math">F<sub>0</sub>=[太陰,<wbr>巨門,<wbr>廉貞,<wbr>天梁,<wbr>右弼,<wbr>文曲,<wbr>天同,<wbr>文昌,<wbr>武曲,<wbr>貪狼]</div>
+<p class="formula-note"><strong>【古籍直接表值】</strong><a class="cite" href="#source-3" aria-label="書籍來源 3">[3]</a></p>
+<p>《捷覽》成熟忌為：</p>
+<div class="formula" role="math">J=[太陽,<wbr>太陰,<wbr>廉貞,<wbr>巨門,<wbr>天機,<wbr>文曲,<wbr>天同,<wbr>文昌,<wbr>武曲,<wbr>貪狼]</div>
+<p>兩者同位保留6／10，己庚辛壬癸後五格完全相同，必改甲乙丁戊。這是表值觀察；古書是否命令「保留福欄後五干」，<strong>待古文驗證</strong>。</p>
+<h3>印星池提供目標星曜集合</h3>
+<p>《星學大成》卷一〈論印星〉有：</p>
+<blockquote>
+<p>甲木乙日丙是熒，丁月戊土己羅辰，庚金辛計壬逢水，癸人見孛是印星。</p>
+</blockquote>
+<p>又明言「十一曜獨炁不與」。<a class="cite" href="#source-5" aria-label="書籍來源 5">[5]</a></p>
+<p>因此印星十曜集合為日、月、火、水、木、金、土、羅、計、孛，各一次。</p>
+<p class="formula-note"><strong>【古籍直接星池】</strong>將它作成熟斗數化忌的目標星池，則是<strong>重建橋，待古文驗證</strong>。</p>
+<p>本模型以既定舊曜／固定星對應，將成熟忌表正規化為：</p>
+<div class="formula" role="math">J<sub>舊曜</sub>=[日,<wbr>月,<wbr>計,<wbr>孛,<wbr>火,<wbr>水,<wbr>木,<wbr>金,<wbr>羅,<wbr>土]</div>
+<p>這個集合與印星池一致，但天干位置並不等於印星原表，故不能稱「印星表改名就得到化忌」。舊曜與固定星的對應，也須在指定文本與模型中使用，不能視作所有古書通用的字典。</p>
+<h3>把限制完整寫成可計算規則</h3>
+<p>用本研究的舊曜正規化，福槽來源為：</p>
+<div class="formula" role="math">A=[月,<wbr>孛,<wbr>計,<wbr>炁,<wbr>水,<wbr>水,<wbr>木,<wbr>金,<wbr>羅,<wbr>土]</div>
+<p>定義第一列克的候選函數 <span class="math-inline">c<sub>1</sub></span>：</p>
+<div class="formula" role="math">c<sub>1</sub>(水)=火,<wbr> c<sub>1</sub>(炁)=孛,<wbr> c<sub>1</sub>(孛)=月</div>
+<div class="formula" role="math">c<sub>1</sub>(月)=羅,<wbr> c<sub>1</sub>(計)=木</div>
+<p>前五干每格允許原曜或第一列克；月額外允許日。後五干保留原值。最後要求結果的多重集合恰為印星十曜，各一次。</p>
+<p class="formula-note"><strong>【星命變五行的受限重建公式，待古文驗證；不是河洛名額公式】</strong></p>
+<p>相克與月借日光材料來源為清舒繼英《乾元秘旨》〈變五行〉等相關段落，其中保存水克火又克孛、炁克孛又克火、孛克月又克土等關係。<a class="cite" href="#source-12" aria-label="書籍來源 12">[12]</a></p>
+<p>第一列克只是依原文先後建立的選取規則，原文未明說先列者優先；月借日光也未明說等於甲位月換日的四化指令。這些均須標為<strong>待古文驗證</strong>。此外，《乾元秘旨》為清代，不能直接證明1581以前的生成過程。</p>
+<h3>唯一解如何產生</h3>
+<p>後五干已占水、木、金、羅、土，前五干必須補齊日、月、火、計、孛：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>天干</th>
+<th>來源</th>
+<th>前五格候選</th>
+<th>星池條件下的結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>甲</td>
+<td>月</td>
+<td>月、羅、日</td>
+<td>日只可由此補入，故取日。</td>
+</tr>
+<tr>
+<td>乙</td>
+<td>孛</td>
+<td>孛、月</td>
+<td>丁須補孛，故乙取月。</td>
+</tr>
+<tr>
+<td>丙</td>
+<td>計</td>
+<td>計、木</td>
+<td>木已由庚保留，故取計。</td>
+</tr>
+<tr>
+<td>丁</td>
+<td>炁</td>
+<td>炁、孛</td>
+<td>炁不在目標池，故取孛。</td>
+</tr>
+<tr>
+<td>戊</td>
+<td>水</td>
+<td>水、火</td>
+<td>水已由己保留，故取火。</td>
+</tr>
+</tbody></table></div>
+<p>得到唯一舊曜序列：</p>
+<div class="formula" role="math">[日,<wbr>月,<wbr>計,<wbr>孛,<wbr>火,<wbr>水,<wbr>木,<wbr>金,<wbr>羅,<wbr>土]</div>
+<p>轉回指定模型的固定星名，就是成熟通行忌表，10／10。</p>
+<p>受限枚舉得到：允許兩支克而不凍結後五，有4解；凍結後五但仍允許兩支克，有2解；再只取第一列克，才剩1解。</p>
+<p>因此唯一性須完整寫成：<strong>在指定福槽、印星池、後五凍結、第一列克與月可取日等條件下，成熟通行忌是唯一解。</strong></p>
+<h3>與《全書》版本的關係</h3>
+<p>南陽堂明刊《全書》的庚忌是天相，並非天同。<a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a> 這是另一個古本結果，不能因上述模型生成通行天同忌，就把天相忌當錯字。</p>
+<p>天同、天相在本研究固定星五行中均屬水，因此五行層不變；但完整星曜集合已變。上述「印星十曜池各一次」模型確認的是《捷覽》基準，本文不宣稱同一星池限制自動推出《全書》庚天相忌。</p>
+<h2 id="chapter-9">完整四化結果與兩個古本分支</h2><figure id="variant-view"><div class="figure-title">同一基準表，保留古本的三格差異</div><div class="controls"><label for="variant">古本版本 <select id="variant"><option value="jielan">1581《捷覽》</option><option value="quanshu">明刊南陽堂《全書》</option></select></label></div><div class="table-wrap"><table id="variant-table"><thead><tr><th>天干</th><th>祿</th><th>權</th><th>科</th><th>忌</th></tr></thead><tbody><tr><th>甲</th><td>廉貞</td><td>破軍</td><td>武曲</td><td>太陽</td></tr><tr><th>乙</th><td>天機</td><td>天梁</td><td>紫微</td><td>太陰</td></tr><tr><th>丙</th><td>天同</td><td>天機</td><td>文昌</td><td>廉貞</td></tr><tr><th>丁</th><td>太陰</td><td>天同</td><td>天機</td><td>巨門</td></tr><tr><th>戊</th><td>貪狼</td><td>太陰</td><td>右弼</td><td>天機</td></tr><tr><th>己</th><td>武曲</td><td>貪狼</td><td>天梁</td><td>文曲</td></tr><tr><th>庚</th><td>太陽</td><td>武曲</td><td class="changed">太陰</td><td class="changed">天同</td></tr><tr><th>辛</th><td>巨門</td><td>太陽</td><td>文曲</td><td>文昌</td></tr><tr><th>壬</th><td>天梁</td><td>紫微</td><td class="changed">左輔</td><td>武曲</td></tr><tr><th>癸</th><td>破軍</td><td>巨門</td><td>太陰</td><td>貪狼</td></tr></tbody></table></div><p id="variant-state" aria-live="polite">《捷覽》：庚科太陰・庚忌天同・壬科左輔。</p><figcaption>黃底標示古本不同的三格：庚科、庚忌、壬科。兩支的祿權相同；科忌選星須連同版本條件閱讀。來源：《捷覽》四化訣、《全書》四化原頁校讀。</figcaption></figure>
+<p>以《捷覽》為基準，公式與重建程序得到：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>天干</th>
+<th>化祿</th>
+<th>化權</th>
+<th>化科</th>
+<th>化忌</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>甲</td>
+<td>廉貞</td>
+<td>破軍</td>
+<td>武曲</td>
+<td>太陽</td>
+</tr>
+<tr>
+<td>乙</td>
+<td>天機</td>
+<td>天梁</td>
+<td>紫微</td>
+<td>太陰</td>
+</tr>
+<tr>
+<td>丙</td>
+<td>天同</td>
+<td>天機</td>
+<td>文昌</td>
+<td>廉貞</td>
+</tr>
+<tr>
+<td>丁</td>
+<td>太陰</td>
+<td>天同</td>
+<td>天機</td>
+<td>巨門</td>
+</tr>
+<tr>
+<td>戊</td>
+<td>貪狼</td>
+<td>太陰</td>
+<td>右弼</td>
+<td>天機</td>
+</tr>
+<tr>
+<td>己</td>
+<td>武曲</td>
+<td>貪狼</td>
+<td>天梁</td>
+<td>文曲</td>
+</tr>
+<tr>
+<td>庚</td>
+<td>太陽</td>
+<td>武曲</td>
+<td>太陰</td>
+<td>天同</td>
+</tr>
+<tr>
+<td>辛</td>
+<td>巨門</td>
+<td>太陽</td>
+<td>文曲</td>
+<td>文昌</td>
+</tr>
+<tr>
+<td>壬</td>
+<td>天梁</td>
+<td>紫微</td>
+<td>左輔</td>
+<td>武曲</td>
+</tr>
+<tr>
+<td>癸</td>
+<td>破軍</td>
+<td>巨門</td>
+<td>太陰</td>
+<td>貪狼</td>
+</tr>
+</tbody></table></div>
+<p class="formula-note"><strong>【古籍結果表】來源：《捷覽》卷一〈安祿權科忌四化訣〉；本研究生成程序與表值比對。</strong><a class="cite" href="#source-1" aria-label="書籍來源 1">[1]</a></p>
+<p>南陽堂明刊《全書》保持其餘各格，差異為庚科天同、庚忌天相、壬科天府；人工校讀原頁PDF151–152的庚句為「庚日武同相為首」，壬句為「壬梁紫府武宿是」。<a class="cite" href="#source-2" aria-label="書籍來源 2">[2]</a></p>
+<p>這兩個古本支的祿權相同，科忌有版本選星差異。文章中所稱「完整確認」，必須連同版本名稱閱讀。</p>
+<h2 id="chapter-10">四化共同結構：穩定骨架與少量重寫</h2>
+<p>四化可以放在同一研究架構中：</p>
+<blockquote>
+<p>母資料 → 指定星池與選取條件 → 必要的移位或替換 → 版本化結果 → 獨立驗證。</p>
+</blockquote>
+<p>但每一欄的具體操作不同：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>四化</th>
+<th>母資料或骨架</th>
+<th>二次操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>祿</td>
+<td>穩定十干祿表</td>
+<td>保留原表。</td>
+</tr>
+<tr>
+<td>權</td>
+<td>祿前一干，再廉換紫</td>
+<td>乙壬癸三顆星閉合搬移，局部星池不變。</td>
+</tr>
+<tr>
+<td>科</td>
+<td>早期科欄</td>
+<td>戊庚壬三格替換，金火火轉水水土。</td>
+</tr>
+<tr>
+<td>忌</td>
+<td>早期福欄</td>
+<td>保留六格，太陰與巨門移位，另移出天梁右弼、移入太陽天機。</td>
+</tr>
+</tbody></table></div>
+<p>權與科都出現七格保留、三格重寫，但權為三顆星的置換，科是三格換星，不能因此合成同一條三循環公式。</p>
+<p>在盡量保存既有星曜的條件下，忌可分解成兩次移位與兩次替換；若不要求星曜保存，也能寫成四格全部換值。兩種都能描述結果，前者較忠實呈現全表真正只兩出兩入的星池變化。這是現代最小重寫分析，<strong>待古文驗證</strong>，不屬於河洛配數。</p>
+<h2 id="chapter-11">哪些已確認，哪些仍待古文驗證</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目前確認範圍</th>
+<th>待古文驗證的部分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>紫府鏡射與十四主星位移</td>
+<td>古圖、古訣可逐項形式化，十二起點驗算成立。</td>
+<td>模板最初如何設計；共同特殊槽壓縮是否為古人思路。</td>
+</tr>
+<tr>
+<td>化祿</td>
+<td>指定早期與成熟材料的十干母表相同。</td>
+<td>不依賴母表的原始生成機制。</td>
+</tr>
+<tr>
+<td>化權</td>
+<td>既定五步鏈完整生成成熟權10／10。</td>
+<td>固定星祿表轉用十變權算子，以及北方範圍、逆行、閉合重掛的直接連接句。</td>
+</tr>
+<tr>
+<td>化科</td>
+<td>河洛名額、配對條件下可還原完整五行向量；各版本星名有表值見證。</td>
+<td>科3／8用於明代編表、餘數即名額、配對完備與版本選星的生成指令。</td>
+</tr>
+<tr>
+<td>化忌</td>
+<td>指定限制下唯一生成《捷覽》忌表10／10。</td>
+<td>福槽加印星池的古代連接、後五凍結、第一列克優先及月換日指令。</td>
+</tr>
+</tbody></table></div>
+<p>古文尚待驗證，不會自動撤回既定模型的計算成果；同時，計算吻合也不能補寫成古人的歷史自述。把這兩件事分別記錄，才能既保留公式成果，又清楚知道未來哪一種新材料會提高其歷史可信度。</p>
+<h2 id="chapter-12">書籍來源與引用說明</h2>
+<p>以下書籍提供本文的安星口訣、表值、星命功能規則與數理背景。引文來自原頁校讀或數位整理本，兩者的證據層級分別註明。</p>
+<p id="source-1"><strong>[1]《新刻纂集紫微斗數捷覽》</strong>，1581年萬曆九年刊本系。本文使用〈安紫府圖〉、〈布南北二斗諸星訣〉、〈安祿權科忌四化訣〉、〈斗數指南總論〉、〈斗數骨髓賦〉等原頁校讀與底本繫聯整理內容。來源層級：部分文字依1581底本的公開點校，原刻目標頁核字未全部完成，須保留這項限制。入口：<a href="https://shixingji.club/public/ziweidoushujielan">公開點校全文</a>、<a href="https://www.tianjihq.com/en/learn/books/ziwei-jielan/21">安紫府圖</a>、<a href="https://tianjihq.com/en/learn/books/ziwei-jielan/22">布南北二斗諸星訣</a>。</p>
+<p id="source-2"><strong>[2]《新鍥希夷陳先生紫微斗數全書》七卷，明代南陽堂刊本。</strong>安天府圖與南北斗安星訣據原頁及數位文本核對；〈安祿權科忌四星變化訣〉使用PDF第151–152頁人工校讀。庚同科相忌、壬府科按該件刊本原頁讀法，不以現代通行表取代。入口：<a href="https://www.shidianguji.com/zh/book/SDZJ0170/chapter/1jvzooy7dkbhh">《全書》卷三數位文本</a>。數位文本可能與特定刊本有異文，引用本件四化時以人工校讀為準。</p>
+<p id="source-3"><strong>[3] 乙亥字金屬活字本《紫微數》及《玄藪・中天太極紫微數秘訣》。</strong>乙亥字本為韓國國立中央圖書館藏，控制號KOL200200680；主要資料為第21張科魁祿馬權福禍表，第20及34–38張相關星名五行與文章星論，第128–129張十干變曜。《玄藪》四星安法見掃描PDF59等頁。來源層級：以原頁人工校讀與平行文本為準；乙亥字的鑄造年份不能直接當成該書刊印年。</p>
+<p id="source-4"><strong>[4] 元保巴《易源奧義》。</strong>提供天干五行陰陽數與後天九宮數配。本文引用其中所列「甲三乙八」等逐項數配；古數配用於化權選取的連接操作仍待古文驗證。</p>
+<p id="source-5"><strong>[5] 明萬民英《星學大成》。</strong>自序嘉靖四十二年（1563）；卷一十干變曜、〈論印星〉提供功能序列與印星池，〈眾星拱北〉提供子為北極、亥丑拱子的結構。卷次在不同整理入口中有差異，本文以篇名定位；來源層級：現存四庫／數位底本文字與原始成書層分開，1563自序不等於現存掃描本也是1563刊印。入口：<a href="https://zh.wikisource.org/zh-hant/%E6%98%9F%E5%AD%B8%E5%A4%A7%E6%88%90_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B701">卷一</a>、<a href="https://zh.wikisource.org/zh-hant/%E6%98%9F%E5%AD%B8%E5%A4%A7%E6%88%90_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD">全覽</a>。</p>
+<p id="source-6"><strong>[6] 南宋朱元昇《三易備遺》。</strong>「衡而數之，八一六是為十五」支持洛書三數成組；不直接支持斗數三曜的化權重掛。</p>
+<p id="source-7"><strong>[7] 隋蕭吉《五行大義》及古典河圖五行生、成數傳統。</strong>提供水1／6、火2／7、木3／8、金4／9、土5／10的數理背景。本文列為五行生成數的背景來源，不將其說成四化配數的直接原文，也不補造未核篇次或逐字引文。</p>
+<p id="source-8"><strong>[8] 蔡明宏《斗數秘儀下廚房》及《華山欽天四化紫微斗數飛星秘儀》材料。</strong>相關材料保存忌1、權2、科3、祿4及河圖對照。屬近代四化河洛橋接來源；本文未補驗版次、出版年與頁碼。此配數的明代用途，待古文驗證。</p>
+<p id="source-9"><strong>[9]《普濟方》〈定數歌括〉；《象山先生全集》生數、成數相關條。</strong>前者提供甲一乙二至癸十的依序數配，後者提供一至五生數、六至十成數分組。本研究用於化科方向族分半的橋接仍待驗。入口：<a href="https://www.shidianguji.com/book/SK1479/chapter/1lbe9y6byat6n">《普濟方》定數歌括</a>、<a href="https://www.shidianguji.com/zh/mid-page/7525192275111559177">《象山先生全集》相關數位條目</a>。</p>
+<p id="source-10"><strong>[10]《唐六典》太常寺太卜署；敦煌P.2859《五兆要決略》、P.2905《五兆經法要決》。</strong>支持五五除之、五行、十干五對與多步取數。敦煌文獻引句來自學術輯校引用，本文未重新核原卷。不能據此說唐代已存在十干化科名額公式。</p>
+<p id="source-11"><strong>[11] 明趙迎《範圍數》起例門與取爻法；元熊朋來《經說》卷七〈評潛虛揲法〉。</strong>前者支持滿週進除與餘數定位，後者支持河圖數展開為配置項數及分階段操作。同型數法與化科名額公式之間的直接連接，待古文驗證。</p>
+<p id="source-12"><strong>[12] 清舒繼英《乾元秘旨》。</strong>主要用〈變五行〉相克關係、月借日光等相關文字；相關研究可見1799年前後讀畫齋系統刊本線索。不能前推為1581成熟四化的原始操作證據。入口：<a href="https://zh.wikisource.org/zh-hans/%E4%B9%BE%E5%85%83%E7%A7%98%E6%97%A8">《乾元秘旨》</a>。</p>
+</article></main><footer>安星與四化公式圖解詳論　・　書籍引文與重建公式分別標註</footer><script src="./assets/anxing-four-hua.js?v=1" defer></script></body></html>
