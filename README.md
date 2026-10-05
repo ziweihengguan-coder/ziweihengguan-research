@@ -5,9 +5,9 @@
 研究中區分古籍明文、數理重建與待證假說，保留推導過程及後續修正。
 
 閱讀入口：
-
-- [化權五步解說](https://ziweihengguan-coder.github.io/ziweihengguan-research/quan-five-steps.html)：依「古文、數學公式、解說、備註來源」介紹化權生成。
 - [安星與四化公式圖解](https://ziweihengguan-coder.github.io/ziweihengguan-research/)：完整圖解與互動安星示例。
+- 
+- [化權五步解說](https://ziweihengguan-coder.github.io/ziweihengguan-research/quan-five-steps.html)：依「古文、數學公式、解說、備註來源」介紹化權生成。
 - [成熟化權生成重建成文稿](research/飛星四化_成熟化權生成重建_研究成文稿_20261006.md)：完整論述、證據層級與模型限制。
 - [研究總索引](research/飛星四化_研究總索引.md)：各節研究成果與引用資料。
 - [古文轉錄與研究專題](research/four_hua_20260929/transcriptions/)：本次收錄的 72 份引用附件。
