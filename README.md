@@ -10,6 +10,7 @@
 - [成熟化權生成重建成文稿](research/飛星四化_成熟化權生成重建_研究成文稿_20261006.md)：完整論述、證據層級與模型限制。
 - [化科完整成文](https://ziweihengguan-coder.github.io/ziweihengguan-research/mature-hua-ke.html)：共同位置與五行骨架、庚壬雙版本分支。
 - [成熟化科生成重建成文稿](research/飛星四化_成熟化科生成重建_研究成文稿_20261006.md)：完整論述與證據矩陣。
+- [化忌完整成文](https://ziweihengguan-coder.github.io/ziweihengguan-research/mature-hua-ji.html)：福位骨架、印星曜池與四格重掛的完整解說。
 - [成熟化忌生成重建成文稿](research/飛星四化_成熟化忌生成重建_研究成文稿_20261006.md)：福位骨架、印星曜池與四格重掛；保留未證歷史採用接點。
 - [化忌 §799 研究資料](research/four_hua_20260929/transcriptions/化忌_799_五行精紀食合印_三命通會食神帶合_福到印role閉合_carrier_pool仍開放_20261006.md)。
 - [研究總索引](research/飛星四化_研究總索引.md)：各節研究成果與引用資料。
