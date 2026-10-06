@@ -18,7 +18,7 @@
 
 新增可重跑：
 
-- `quan_784_wyg_role_to_target_remount_gate_20261006.js`
+- `research/four_hua_20260929/quan_784_wyg_role_to_target_remount_gate_20261006.js`
 
 ## 二、D1：卷一直接明寫「變曜角色 → 宮位表」的cross-table remount
 

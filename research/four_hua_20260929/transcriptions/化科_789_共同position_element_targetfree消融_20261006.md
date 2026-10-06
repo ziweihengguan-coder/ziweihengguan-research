@@ -108,4 +108,4 @@ selection 階段只用：
 - 【庚太陰／天同、壬左輔／天府】＝仍屬branch-specific carrier selector，§789不裁版本。
 
 可重跑：
-`ke_789_common_position_element_targetfree_ablation_20261006.js`
+`research/four_hua_20260929/ke_789_common_position_element_targetfree_ablation_20261006.js`

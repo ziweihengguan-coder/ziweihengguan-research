@@ -18,7 +18,7 @@
 
 新增可重跑：
 
-- `quan_782_wyg_state_name_remount_matrix_audit_20261005.js`
+- `research/four_hua_20260929/quan_782_wyg_state_name_remount_matrix_audit_20261005.js`
 
 ## 二、資料範圍與保守限制
 

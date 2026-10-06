@@ -1,6 +1,6 @@
 《新鍥希夷陳先生紫微斗數全書》七卷
 明代南陽堂刊本
-本機 PDF：新鍥希夷陳先生紫微斗數全書_七卷_明代南陽堂刊本.pdf
+本機 PDF：../新鍥希夷陳先生紫微斗數全書_七卷_明代南陽堂刊本.pdf
 校讀頁：PDF 第151至152頁
 校讀日期：2026-09-29
 
@@ -37,10 +37,11 @@
 
 【對照影像】
 
-nanyang_quanshu_fourhua-151.png
-nanyang_quanshu_fourhua-152.png
-nanyang_quanshu_fourhua-151-note-4x.png
+../nanyang_quanshu_fourhua-151.png
+../nanyang_quanshu_fourhua-152.png
+../nanyang_quanshu_fourhua-151-note-4x.png
 
 【公開掃描】
 
 https://vr-d.com/pdf-file/%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0%2F%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0%E5%85%A8%E4%B9%A6_%E4%B8%83%E5%8D%B7_%E6%98%8E%E4%BB%A3%E5%8D%97%E9%98%B3%E5%A0%82%E5%88%8A%E6%9C%AC.pdf
+

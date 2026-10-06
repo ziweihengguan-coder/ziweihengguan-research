@@ -18,7 +18,7 @@
 
 新增可重跑：
 
-- `quan_783_wyg_name_remount_meta_rule_gate_20261005.js`
+- `research/four_hua_20260929/quan_783_wyg_name_remount_meta_rule_gate_20261005.js`
 
 ## 二、M1：其名雖異，實同途
 

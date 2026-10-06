@@ -144,4 +144,4 @@
 若成立，四化共同語法就可從「每欄一條公式」提升為【有限rewrite primitive＋各化selector】模型。
 
 新增腳本：
-- `four_hua_715_operator_family_audit_20261004.js`
+- `research/four_hua_20260929/four_hua_715_operator_family_audit_20261004.js`

@@ -20,7 +20,7 @@
 
 可重跑 gate：
 
-`quan_762_baguazhai_ming_facsimile_source_reopen_gate_20261005.js`
+`research/four_hua_20260929/quan_762_baguazhai_ming_facsimile_source_reopen_gate_20261005.js`
 
 ## 二、不是只靠商品文字：樣張直接見原刻目錄與正文
 

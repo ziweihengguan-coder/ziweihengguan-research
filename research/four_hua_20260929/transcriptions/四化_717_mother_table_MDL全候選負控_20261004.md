@@ -22,7 +22,7 @@
 
 新增可重跑：
 
-`four_hua_717_mother_table_mdl_negative_control_20261004.js`
+`research/four_hua_20260929/four_hua_717_mother_table_mdl_negative_control_20261004.js`
 
 注意：成熟 target 在本輪只作事後 MDL／negative-control 比較，不拿來生成古 operator；不建立現代任意加權分數，只報：
 

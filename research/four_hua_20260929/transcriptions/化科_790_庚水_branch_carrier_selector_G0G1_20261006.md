@@ -184,4 +184,4 @@ G0與G1不必共享同一個carrier selector。
 3. 檢查R1是否也像G1一樣屬編輯層重掛，而不是下游判語自然生成。
 
 可重跑：
-`ke_790_geng_branch_carrier_selector_audit_20261006.js`
+`research/four_hua_20260929/ke_790_geng_branch_carrier_selector_audit_20261006.js`

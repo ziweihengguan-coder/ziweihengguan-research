@@ -14,7 +14,7 @@
 
 本節即執行此blind test。新增可重跑：
 
-- `quan_779_blind_wyg_old_name_universe_audit_20261005.js`
+- `research/four_hua_20260929/quan_779_blind_wyg_old_name_universe_audit_20261005.js`
 
 ## 二、blind protocol
 

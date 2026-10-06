@@ -16,7 +16,7 @@
 
 可重跑：
 
-`quan_765_xinwenfeng_wyg_provenance_gate_20261005.js`
+`research/four_hua_20260929/quan_765_xinwenfeng_wyg_provenance_gate_20261005.js`
 
 ## 二、直接樣張
 
@@ -97,7 +97,7 @@
 
 §763已確認本機：
 
-`星學大成_Kanripo_000.txt` ～ `030.txt`
+`research/星學大成_Kanripo_000.txt` ～ `030.txt`
 
 檔頭為WYG／《欽定四庫全書》三十卷系。
 

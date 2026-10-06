@@ -21,7 +21,7 @@
 
 新增可重跑：
 
-- `quan_780_alias_selector_robustness_ablation_20261005.js`
+- `research/four_hua_20260929/quan_780_alias_selector_robustness_ablation_20261005.js`
 
 ## 二、固定條件
 

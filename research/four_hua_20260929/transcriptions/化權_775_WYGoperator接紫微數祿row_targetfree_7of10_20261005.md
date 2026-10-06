@@ -15,7 +15,7 @@
 
 新增可重跑：
 
-- `quan_775_wyg_operator_to_ziweishu_lu_blind_validation_20261005.js`
+- `research/four_hua_20260929/quan_775_wyg_operator_to_ziweishu_lu_blind_validation_20261005.js`
 
 ## 二、輸入A：《紫微數》固定祿row
 

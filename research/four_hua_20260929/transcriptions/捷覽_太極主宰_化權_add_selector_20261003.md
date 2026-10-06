@@ -11,7 +11,7 @@
 ## A. 《星學大成》對「權」的功能定義
 
 本機：
-- 星學大成_Kanripo_001.txt
+- research/星學大成_Kanripo_001.txt
 
 萬民英在十干變曜橫圖自注：
 
@@ -106,7 +106,7 @@ https://shixingji.club/public/ziweidoushujielan
 這個層級。
 
 可重跑：
-- quan_pool_add_selector_sovereign_audit_20261003.js
+- research/four_hua_20260929/quan_pool_add_selector_sovereign_audit_20261003.js
 
 實跑：
 - broad 官/權/貴 = 4候選

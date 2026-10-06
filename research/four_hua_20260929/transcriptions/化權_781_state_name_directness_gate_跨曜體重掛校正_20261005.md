@@ -22,7 +22,7 @@
 
 新增可重跑：
 
-- `quan_781_state_name_directness_gate_20261005.js`
+- `research/four_hua_20260929/quan_781_state_name_directness_gate_20261005.js`
 
 ## 二、B1：火→天梁不是火＝天梁
 
