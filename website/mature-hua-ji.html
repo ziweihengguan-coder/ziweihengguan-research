@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="成熟化忌生成重建完整成文：從早期福欄位置骨架、食神五合至印功能位、獨立印星十曜集合與四格稀疏重掛，重建《捷覽／全集》支成熟化忌，並明確保留唯一尚未直證的歷史跨表接點。">
+<meta name="description" content="成熟化忌生成重建最新成文：條件式公式可完整重建《捷覽／全集》支成熟化忌10／10；但§807–808證明獨立印星只屬成熟答案揭示後唯一完全吻合，遮住答案時排日仍是古典競爭解，target-blind pool selector尚未閉合。">
 <title>成熟化忌的生成重建｜紫微衡觀研究</title>
 <link rel="stylesheet" href="./assets/anxing-four-hua.css?v=4">
 <link rel="canonical" href="https://ziweihengguan-coder.github.io/ziweihengguan-research/mature-hua-ji.html">
@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="紫微衡觀研究">
 <meta property="og:title" content="成熟化忌的生成重建">
-<meta property="og:description" content="福位骨架、印星曜池、四格稀疏重掛，以及唯一尚未直證的歷史跨表接點。">
+<meta property="og:description" content="公式可條件式重建成熟化忌10／10；獨立印星為揭示答案後唯一完全吻合，但遮住答案後排日仍是競爭解，選池規則尚未直證。">
 <meta property="og:url" content="https://ziweihengguan-coder.github.io/ziweihengguan-research/mature-hua-ji.html">
 </head>
 <body>
@@ -23,12 +23,12 @@
 <header class="hero">
 <p class="eyebrow">紫微斗數・四化源流研究</p>
 <h1>成熟化忌的生成重建</h1>
-<p class="subtitle">從早期福欄的位置骨架、食神五合到印功能位，再以獨立〈印星〉十曜集合約束承載曜，最後由四個有向古典關係完成前五干的四格稀疏重掛。</p>
+<p class="subtitle">從早期福欄的位置骨架、食神五合到印功能位，再以獨立〈印星〉作條件式候選曜池，配合四個有向古典關係重建成熟化忌10／10；同時保留§808尚未閉合的盲選曜池問題。</p>
 <div class="hero-tags">
 <span>低自由度重建</span>
 <span>四格稀疏重掛</span>
 <span>古典關係 4／4</span>
-<span>唯一歷史接點未直證</span>
+<span>盲選曜池仍未閉合</span>
 </div>
 <button class="print-action" id="print" type="button">列印文章</button>
 </header>
@@ -42,7 +42,7 @@
 
 <main>
 <article>
-<p class="lede">成熟化忌目前已可收斂成一條來源受限、低自由度且可重跑的生成鏈：早期福欄提供位置骨架，福功能位經食神五合閉合到印功能位，獨立〈印星〉提供與成熟忌完全相同的十曜集合，再由月→日、孛→月、炁→孛、水→火四個有向關係完成最小重掛。尚未直證的，只剩「化印功能位為何在這一步切換到獨立〈印星〉承載曜表」這一個具體歷史接點。</p>
+<p class="lede">成熟化忌目前已有一條來源受限、低自由度且可重跑的條件式生成公式：給定獨立〈印星〉候選曜池後，早期福欄位置骨架、福→印功能位與四個有向關係可以完整閉合成熟 G0 化忌 10／10。但§807–808進一步證明：獨立〈印星〉只是成熟答案揭示後六候選中唯一完全吻合；完全遮住答案時，現存古典規則尚不能唯一選出排炁，而且「所忌者暗耗刑囚」反而先把排日推成真正競爭解。</p>
 
 <p class="formula-note"><strong>本文用語：</strong>「位置骨架」指哪些天干位置保留、哪些位置改寫；「功能位」指福、印、囚、權等十變曜功能；「承載曜」指日月五星四餘或紫微固定星等實際星曜；「曜池」指允許使用的星曜集合。G0 是本文對《捷覽／全集》成熟化忌支的研究代號，不是古籍原名。</p>
 
@@ -57,9 +57,11 @@
 <a href="#chapter-6">四個有向古典關係</a>
 <a href="#chapter-7">古代已有跨表操作語法</a>
 <a href="#chapter-8">最終檢驗與停止條件</a>
-<a href="#chapter-9">成熟化忌的五層重建</a>
-<a href="#chapter-10">證據矩陣</a>
-<a href="#chapter-11">結論與來源</a>
+<a href="#chapter-9">§802–806：繞開印星池的嘗試</a>
+<a href="#chapter-10">§807–808：六池 cold-start 校正</a>
+<a href="#chapter-11">成熟化忌的條件式五層重建</a>
+<a href="#chapter-12">證據矩陣</a>
+<a href="#chapter-13">結論與來源</a>
 </nav>
 </details>
 
@@ -246,22 +248,71 @@
 </section>
 
 <section id="chapter-9">
-<h2>成熟 G0 化忌的五層最小充分重建</h2>
+<h2>§802–806：嘗試繞開印星池，仍無法獨立閉合</h2>
+<p>§802–806另外測試一條不直接預設獨立〈印星〉曜池的 Route B：只使用早期福、祿權科碰撞、十干化曜的吉凶極性與四條局部關係，看看能否在完全遮住成熟化忌答案時，自動推出改寫位置與承載曜。</p>
+
+<h3>選位層：可縮小候選，但不能事前唯一選出甲乙丁戊</h3>
+<p>《星學大成》卷二十六直接說「所喜者官魁福祿，所忌者暗耗刑囚」，因此把早期福的功能狀態分成正／負極性，有明確古文依據。但後續消融顯示：</p>
+<ul>
+<li>權／科局部碰撞單獨不能精確只留下甲、乙、丁、戊；</li>
+<li>把六吉／四凶直接當成「可改寫／不可改寫」規則，沒有古文 specific instruction；</li>
+<li>最短的權科局部窗口依賴<strong>成熟</strong>化權、化科重掛後的結果，不能倒裝成更早的化忌生成規則；</li>
+<li>若換回早期權科，精確四格不再成立。</li>
+</ul>
+<p class="formula-note"><strong>所以：</strong>Route B 的選位只能定為來源受限、低複雜度、與成熟答案相容的重建候選，不能升成古文明示的化忌選位公式。</p>
+
+<h3>承載曜層：甲、丁局部可逼出，乙最後仍需要全局曜池</h3>
+<p>固定改寫位置後，從較寬的局部關係候選開始枚舉：</p>
+<div class="status-grid">
+<div><b>24 解 → 4 解</b><span>加入同行祿權科不可重複。</span></div>
+<div><b>4 解 → 2 解</b><span>加入改寫後目標彼此不同。</span></div>
+<div><b>2 解 → 1 解</b><span>最後仍要加入全局承載曜不重／曜池式約束，才唯一得到成熟 G0 化忌。</span></div>
+</div>
+<p>其中甲「月→日」、丁「炁→孛」可由局部排他逼出；戊「水→火」還需改寫目標互異；而乙「孛→月」最後仍依賴全局 carrier-universe 約束。</p>
+<p class="callout"><strong>Route B 結論：</strong>局部古典關係確實有資訊量，但它沒有真正繞過全局曜池問題；最後仍需要一條能決定整體 carrier pool 的規則。</p>
+</section>
+
+<section id="chapter-10">
+<h2>§807–808：六池 cold-start 校正，排日成為真正競爭解</h2>
+<p>為避免「先看到印星吻合才挑印星」的疑慮，§807把已登記的 old selector 全部納入比較。20張 selector 中18張形成十曜不重表，集合去重後為5類，再加入早期紫微祿舊曜池，形成6個事前候選：</p>
+<div class="formula">排日・排土・排炁・排火・排孛・排金</div>
+<p>獨立〈印星〉就是其中的<strong>排炁</strong>類。</p>
+
+<h3>揭示成熟答案後：排炁／獨立〈印星〉是唯一 10／10</h3>
+<p>六池先經獨立 old-body→fixed-star codebook 投影，最後才打開成熟 G0 化忌 carrier set。結果只有排炁／獨立〈印星〉為 10／10 完全一致，其餘五類都是 9／10。</p>
+<p>這仍然是一個重要的 anti-cherry-pick 結果：在事前固定的候選宇宙中，獨立〈印星〉確實是唯一完全吻合者。</p>
+<p>但§808又證明六池本質上都是「十一曜取十曜、各排一曜」，因此任兩個不同候選天然就會有 9／10 overlap。也就是說，其餘五類的9／10主要是集合幾何；真正有辨識力的只有最後到底排哪一曜。</p>
+
+<h3>完全遮住成熟化忌後：目前仍不能唯一選出排炁</h3>
+<p>如果不讀成熟答案，只要求「既存古典 selector、十曜不重、可以完整投影」，六池全部保留。若再加「離早期福改動最少」，也只得到排日／排火並列，仍不是排炁。</p>
+<p>更關鍵的是，《星學大成》直接說：</p>
+<blockquote>所忌者暗耗刑囚。</blockquote>
+<p>暗、耗、刑、囚四張十干表在六個候選中全部屬同一個<strong>排日</strong>類。因此若真的把成熟化忌完全遮住，只按目前最直接的「忌」語義讀古書，第一個被推出的反而是排日。</p>
+<p class="formula-note"><strong>這不證成熟化忌應採排日。</strong>它證明的是：目前不存在一條「因為叫忌，所以自然應選獨立印星／排炁」的盲選規則。</p>
+
+<h3>真正的硬 gate</h3>
+<p>〈論印星〉「十一曜獨炁不與」只能證明<strong>印星這一池自身依法排炁</strong>；它不能證明<strong>化忌依法必須選印星</strong>。</p>
+<p class="callout"><strong>§808 最終判語：</strong>完全遮住成熟化忌後，現存古典規則尚不能唯一選出排炁；獨立〈印星〉只能被證明「自身依法必排炁」，不能被證明「化忌依法必選印星」。</p>
+<p>未來若要真正關掉這個問題，新證據不能只是再次證明「印星＝排炁」，而必須說明為何捨天印／化印以及目前更直接的排日競爭路徑，另取獨立〈印星〉；或者提供同等強度的 specific composition，使排日被古典 operator 排除、排炁在不看答案時被唯一選中。</p>
+</section>
+
+<section id="chapter-11">
+<h2>成熟 G0 化忌的條件式五層最小充分重建</h2>
 <div class="status-grid">
 <div><b>第一層：位置骨架</b><span>早期福欄提供 6／10 不動位置，並把改寫範圍限制在甲、乙、丁、戊。</span></div>
 <div><b>第二層：功能位組合</b><span>化福＝食神；食神五合；化印＝正官／正印。福功能位→印功能位十干 10／10 閉合。</span></div>
-<div><b>第三層：承載曜集合約束</b><span>成熟 G0 忌與獨立〈印星〉使用完全相同的十曜集合，但沒有證據把兩張表直接等同。</span></div>
+<div><b>第三層：條件式承載曜集合約束</b><span>成熟 G0 忌與獨立〈印星〉使用完全相同的十曜集合；§807–808證明它是六個事前候選中答案揭示後唯一10／10 exact fit，但尚不是 target-blind selector。</span></div>
 <div><b>第四層：稀疏重掛</b><span>月→日、孛→月、炁→孛、水→火四個局部改掛均有方向一致的古典關係。</span></div>
 </div>
 <div class="formula">第五層：驗證 → 組合後得到成熟 G0 十干化忌 10／10。</div>
 
 <p>把五層收斂成一條研究模型：</p>
 <div class="formula">早期福位置骨架<br>＋ 食神五合到印功能位<br>＋ 與獨立〈印星〉完全同集合的承載曜約束<br>＋ 四個有向關係支撐的 S(2,2) 重掛<br>→ 成熟 G0 化忌</div>
-<p class="callout"><strong>正式定級：</strong>來源受限／低自由度／可重現的生成重建；僅一處特定跨表切換尚未直證。</p>
-<p>因此本文不寫成「已找到古人完整化忌公式」，而寫成「算法與結構重建已完成到低自由度；唯一具體歷史採用接點未證」。</p>
+<p class="callout"><strong>正式定級：</strong>來源受限／低自由度／可重現的條件式生成重建；獨立〈印星〉是成熟答案揭示後唯一完全吻合的候選，但不看答案時的選池規則仍未閉合。</p>
+<p>因此本文不寫成「已找到古人完整化忌公式」，而寫成：<strong>給定獨立〈印星〉候選曜池後，公式可完整生成成熟化忌10／10；但為何古人應事前選這一池，以及是否真的依此編表，仍未取得直接古文。</strong></p>
 </section>
 
-<section id="chapter-10">
+<section id="chapter-12">
 <h2>證據矩陣：哪些已閉合，哪些仍保留</h2>
 <div class="table-wrap">
 <table>
@@ -276,25 +327,29 @@
 <tr><td>四個變動關係是否都有方向明確的古典支持</td><td><strong>是</strong>；明代同時代材料達 4／4。</td></tr>
 <tr><td>古代是否已存在一般跨表／功能重掛語法</td><td><strong>是</strong>。</td></tr>
 <tr><td>「天印／化印→獨立〈印星〉」的特定切換是否已找到</td><td><strong>否</strong>；已核材料未見。</td></tr>
+<tr><td>六個事前候選中，獨立〈印星〉是否為答案揭示後唯一10／10</td><td><strong>是</strong>；§807–808保留此驗證結果。</td></tr>
+<tr><td>完全遮住成熟化忌後，是否已有古典規則唯一選出排炁／印星</td><td><strong>否</strong>；target-blind pool selector 仍開放。</td></tr>
+<tr><td>目前最直接的「所忌」語義是否形成競爭解</td><td><strong>是</strong>；暗、耗、刑、囚共同指向排日類。</td></tr>
 <tr><td>四關係→成熟化忌表的直接古文組合是否已找到</td><td><strong>否</strong>；已核材料未見。</td></tr>
 <tr><td>是否仍需泛搜一般福印、炁孛、水火等材料</td><td><strong>否</strong>；歷史泛搜已停止。</td></tr>
-<tr><td>目前狀態</td><td><strong>正式成文</strong>；只保留單一具體歷史採用接點。</td></tr>
+<tr><td>目前狀態</td><td><strong>正式成文</strong>；條件式公式已閉合，target-blind pool selector／specific historical adoption仍保留。</td></tr>
 </tbody>
 </table>
 </div>
 </section>
 
-<section id="chapter-11">
+<section id="chapter-13">
 <h2>結論與來源</h2>
 <p>成熟化忌現在已不是「只有一張答案表」。它可以被分解成清楚、可驗證、可重跑的結構：</p>
 <div class="formula">早期福位置骨架 → 福功能位經食神五合到印功能位 → 獨立印星十曜集合約束 → 四個有向局部重掛 → 成熟 G0 化忌</div>
-<p>其中，位置骨架、福到印的功能位組合、十曜集合一致性、四個局部方向關係都已有直接材料或可重跑結構。唯一不能寫成歷史定論的，是<strong>古代編表者是否真的在這一步把化印功能位切換到獨立〈印星〉承載曜表</strong>。</p>
-<p>因此成熟化忌的最終判語固定為：</p>
-<p class="callout"><strong>算法／重建鏈已完成到低自由度；唯一具體歷史採用接點未證。</strong></p>
+<p>其中，位置骨架、福到印的功能位組合、十曜集合一致性、四個局部方向關係都已有直接材料或可重跑結構。但§808要求再分清兩件事：一是<strong>給定獨立〈印星〉候選曜池後，公式能否完整生成成熟化忌</strong>；二是<strong>完全不看成熟答案時，古典規則能否事前唯一選中這個曜池</strong>。現在前者成立，後者仍未閉合。</p>
+<p>因此成熟化忌的最終判語更新為：</p>
+<p class="callout"><strong>條件式公式／結構重建已完成到低自由度並可重跑 10／10；target-blind pool selector 與 specific historical adoption bridge 仍未證。</strong></p>
 
-<h3>只有三類新材料值得重開來源研究</h3>
+<h3>只有四類新材料值得重開來源研究</h3>
 <ol>
-<li>可定來源的古文或過渡表明寫「天印／化印所得功能位，再取獨立印星表」；</li>
+<li>可定來源的古文或過渡表明寫「天印／化印所得功能位，再取獨立印星表」，並說明為何不用化印自身承載曜列；</li>
+<li>可定來源的古文或操作規則能在不讀成熟化忌答案時排除排日等競爭池，唯一選中排炁／獨立印星；</li>
 <li>可定來源的古文直接把月→日、孛→月、炁→孛、水→火四個關係組成成熟十干化忌；</li>
 <li>新的原件提供同等強度、足以改變現有證據矩陣的直接組合關係。</li>
 </ol>
@@ -318,7 +373,7 @@
 
 <footer>
 <p><a href="./index.html">返回安星與四化主研究頁</a> ・ <a href="https://ziweihengguan.com/">紫微衡觀</a></p>
-<p>成熟化忌的生成重建 ・ 福位骨架、印星曜池、四格重掛與證據邊界</p>
+<p>成熟化忌的生成重建 ・ 條件式公式、六池 cold-start 校正、排日競爭解與證據邊界</p>
 </footer>
 
 <script src="./assets/anxing-four-hua.js?v=3" defer></script>
