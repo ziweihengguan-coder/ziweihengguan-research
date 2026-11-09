@@ -1,0 +1,408 @@
+{
+  "title": "M11 Source-side caller registry",
+  "date": "2026-10-19",
+  "version": "1.0",
+  "purpose": "辨識同書異算法、同名異算法、同運算異名；與跨曜年度囚身份承接嚴格隔離",
+  "witnessCaution": "2026-10-19當輪目驗T1299卷上下數位文本；其他沿用既有M05、§818-D、§818-R人工核實，均不構成新版獨立史證",
+  "status": {
+    "section816": "OPEN",
+    "section817": "OPEN",
+    "section818": "OPEN",
+    "yearQiuToFixedJi": "NO_SOURCE_SIDE_CALLER_OBSERVED_IN_REGISTERED_CASES",
+    "guiQiuCounterexample": "癸囚炁→成熟貪狼：未證轉掛",
+    "dateEvidenceCutoff": "1581年前之獨立見證另立守門"
+  },
+  "records": [
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_UP_MONTH_28",
+      "source": "T1299《宿曜經》卷上〈大唐月建圖〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/1",
+      "anchor": "卷上原文第73–136行",
+      "sourceQuote": "今請演舊為新。取歷月日列為立成",
+      "witness": "LIVE_TEXT_RECHECK_20261019",
+      "textLayer": "楊景風修注層；現存數位校訂文本",
+      "intent": "依唐曆月份與日期直接查月建宿名",
+      "inputs": [
+        {
+          "name": "month",
+          "type": "TangMonth"
+        },
+        {
+          "name": "day",
+          "type": "Day1to30"
+        }
+      ],
+      "prerequisites": [],
+      "indexSpace": "28宿",
+      "origin": "正月初一虛宿=0",
+      "direction": "每月起點+2；每日+1",
+      "operator": "t1299_month28",
+      "outputType": "CalendarLodgeName28",
+      "outputMeaning": "表格宿名，非實測月球黃經",
+      "evidence": "DIRECT_TABLE_PLUS_RECONSTRUCTED_MODULAR_FORMULA",
+      "limits": "360人工轉錄fixture；無閏月、月相與實際天文曆元校正"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_DOWN_WANG_27",
+      "source": "T1299《宿曜經》卷下〈二十七宿十二宮圖〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/2",
+      "anchor": "卷下原文第96–99行",
+      "sourceQuote": "夫欲知二十七宿日者，先須知月望宿日",
+      "witness": "LIVE_TEXT_RECHECK_20261019",
+      "textLayer": "現存卷下編纂層，與卷上修注非必同層",
+      "intent": "已有本月十五日望宿時求該月某日所屬宿日",
+      "inputs": [
+        {
+          "name": "fullMoonLodge",
+          "type": "LodgeName27"
+        },
+        {
+          "name": "day",
+          "type": "Day1to30"
+        }
+      ],
+      "prerequisites": [
+        "必須另行取得當月十五日望宿"
+      ],
+      "indexSpace": "27宿（不含牛）",
+      "origin": "望宿=月十五日",
+      "direction": "十五日前逆、十五日後順；含首項",
+      "operator": "t1299_wang27",
+      "outputType": "DayLodgeName27",
+      "outputMeaning": "該日的27宿日名",
+      "evidence": "EXPLICIT_PROCEDURAL_CALLER",
+      "limits": "二月十五角宿為『假如』示例，不能冒充逐年實測固定曆元；望宿查得方法未由本條完整指定"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_DOWN_BIRTH_27",
+      "source": "T1299《宿曜經》卷下〈求人所屬宿／又法略算〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/2",
+      "anchor": "卷下原文第105–106行",
+      "sourceQuote": "先下生日數，又虛加十三訖，即從彼生月望宿",
+      "witness": "LIVE_TEXT_RECHECK_20261019",
+      "textLayer": "現存卷下編纂層，與卷上修注非必同層",
+      "intent": "依生日與本月望宿求本命宿",
+      "inputs": [
+        {
+          "name": "fullMoonLodge",
+          "type": "LodgeName27"
+        },
+        {
+          "name": "birthDay",
+          "type": "Day1to30"
+        }
+      ],
+      "prerequisites": [
+        "必須另行取得出生月望宿"
+      ],
+      "indexSpace": "27宿（不含牛）",
+      "origin": "望宿=序數第一",
+      "direction": "生日+13，27周取餘；採含首項序數",
+      "operator": "t1299_birth27",
+      "outputType": "NatalLodgeName27",
+      "outputMeaning": "人的本命宿；不可混同月建宿名",
+      "evidence": "EXPLICIT_PROCEDURAL_CALLER_AND_EXAMPLE",
+      "limits": "二月17日→氐僅以二月望角為示例輸入；簡法按含首項起數避免0/1-based錯位"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_UP_108_PADA",
+      "source": "T1299《宿曜經》卷上〈序分定宿直品〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/1",
+      "anchor": "卷上原文第28、34–58行",
+      "sourceQuote": "又一宮配管列宿九足",
+      "witness": "LIVE_TEXT_RECHECK_20261019",
+      "textLayer": "卷上現存修注層",
+      "intent": "將27宿四足按連續序列分配12個黃道宮九足",
+      "inputs": [
+        {
+          "name": "lodgeAndQuarter",
+          "type": "ZodiacPāda108"
+        }
+      ],
+      "prerequisites": [
+        "27宿×4足來源次序及12黃道宮起點"
+      ],
+      "indexSpace": "27×4=12×9=108足",
+      "origin": "第一宮星四足起",
+      "direction": "按經文列序順排，分每宮9足",
+      "operator": "descriptive_108",
+      "outputType": "ZodiacSign12",
+      "outputMeaning": "黃道宮，非紫微人事十二宮",
+      "evidence": "DIRECT_LIST_PLUS_ARITHMETIC_RECONSTRUCTION",
+      "limits": "只證等份座標模型，不當物理不等宿區精密換算"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_UP_SIX_ROLES",
+      "source": "T1299《宿曜經》卷上〈祕密雜占品第五〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/1",
+      "anchor": "M05§B既有來源摘錄",
+      "sourceQuote": "從命數第十為事宿，第四為意宿，第十六為聚宿",
+      "witness": "PRIOR_STUDY_M05",
+      "textLayer": "卷上現存修注層",
+      "intent": "由既得本命宿分出命事意聚同克六角色",
+      "inputs": [
+        {
+          "name": "natalLodge",
+          "type": "NatalLodgeName27"
+        }
+      ],
+      "prerequisites": [
+        "已有合法取得的本命宿"
+      ],
+      "indexSpace": "27宿",
+      "origin": "命宿本位含首位",
+      "direction": "順數10/4/16/20/13等相對位",
+      "operator": "descriptive_six_roles",
+      "outputType": "RelativeLodgeRoleSet27",
+      "outputMeaning": "同一宿為參考點派生六種角色",
+      "evidence": "EXPLICIT_RULE_PRIOR_RECHECK",
+      "limits": "不得把功能角色複數解讀成星曜載體的跨曜身份複製"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "T1299_DOWN_WEEKDAY_LODGE",
+      "source": "T1299《宿曜經》卷下〈七曜直日曆品第八〉",
+      "sourceUrl": "https://deerpark.app/cbeta/T1299/2",
+      "anchor": "M05§D既有來源摘錄",
+      "sourceQuote": "甘露日、金剛峯日、羅剎日",
+      "witness": "PRIOR_STUDY_M05",
+      "textLayer": "卷下現存編纂層",
+      "intent": "依星期直曜與月宿組合判定特定日類",
+      "inputs": [
+        {
+          "name": "weekdayBody",
+          "type": "Weekday7"
+        },
+        {
+          "name": "lunarLodge",
+          "type": "LodgeName27"
+        }
+      ],
+      "prerequisites": [
+        "已求得星期直曜與月宿"
+      ],
+      "indexSpace": "7曜×27宿（原文僅列其中21個配對）",
+      "origin": "三組×七曜按原文列序",
+      "direction": "查部分配對表；非全域封閉函數",
+      "operator": "partial_weekday_lodge",
+      "outputType": "DayClassPartial",
+      "outputMeaning": "吉凶日類別，不替換七曜身份",
+      "evidence": "PARTIAL_CONDITIONAL_MATRIX_PRIOR_RECHECK",
+      "limits": "僅21個有文字配對；未載全7×27完整對照"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "XUANSOU_OLD_LONGCHI",
+      "source": "《玄藪》《乙亥字紫微數》〈安龍池水星〉",
+      "sourceUrl": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §1",
+      "sourceQuote": "科名星，一名文曲，從辰上順數子時，至本生時定之",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "本機校讀＋公開轉錄；兩者不充當獨立早期版本",
+      "intent": "依生時安排舊龍池水星（文曲）",
+      "inputs": [
+        {
+          "name": "birthHour",
+          "type": "BirthHourBranch12"
+        }
+      ],
+      "prerequisites": [],
+      "indexSpace": "人事十二宮序",
+      "origin": "辰=4（子=0）",
+      "direction": "順時",
+      "operator": "hour_forward_chen",
+      "outputType": "Palace12",
+      "outputMeaning": "舊龍池／文曲之安置宮位",
+      "evidence": "ALGORITHM_PRIOR_CHECKED",
+      "limits": "同安星算子不代表已證跨書直接傳承"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "JIELAN_WENQU",
+      "source": "《紫微斗數捷覽》〈安昌曲〉",
+      "sourceUrl": "https://shixingji.club/public/ziweidoushujielan",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §1",
+      "sourceQuote": "辰上顺时寻文曲，戌上逆时觅文昌",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "公開點校；本輪未目驗1581年前原刻",
+      "intent": "依生時安排成熟文曲",
+      "inputs": [
+        {
+          "name": "birthHour",
+          "type": "BirthHourBranch12"
+        }
+      ],
+      "prerequisites": [],
+      "indexSpace": "人事十二宮序",
+      "origin": "辰=4（子=0）",
+      "direction": "順時",
+      "operator": "hour_forward_chen",
+      "outputType": "Palace12",
+      "outputMeaning": "成熟文曲之安置宮位",
+      "evidence": "ALGORITHM_PRIOR_CHECKED",
+      "limits": "與舊龍池同運算，名稱輸出不同"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "JIELAN_NEW_LONGCHI",
+      "source": "《紫微斗數捷覽》〈安龍池鳳閣星訣〉",
+      "sourceUrl": "https://shixingji.club/public/ziweidoushujielan",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §1",
+      "sourceQuote": "龙池起子顺行辰，生年便是福元真",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "公開點校；本輪未目驗1581年前原刻",
+      "intent": "依出生年支安排另一定義的龍池",
+      "inputs": [
+        {
+          "name": "birthYearBranch",
+          "type": "BirthYearBranch12"
+        }
+      ],
+      "prerequisites": [],
+      "indexSpace": "人事十二宮序",
+      "origin": "辰=4（子=0）",
+      "direction": "順年支",
+      "operator": "year_branch_forward_chen",
+      "outputType": "Palace12",
+      "outputMeaning": "新龍池，不是生時文曲",
+      "evidence": "ALGORITHM_PRIOR_CHECKED",
+      "limits": "同名龍池不同輸入；同宮特例不可冒充同算法"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "XUANSOU_SANTAI",
+      "source": "《玄藪》〈安三台〉",
+      "sourceUrl": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §2-B",
+      "sourceQuote": "安三台：左輔土星，又官星",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "公開轉錄與校讀，屬同族證詞",
+      "intent": "由生月自辰起再由該宮依生日順數三台",
+      "inputs": [
+        {
+          "name": "birthMonth",
+          "type": "BirthMonth1to12"
+        },
+        {
+          "name": "birthDay",
+          "type": "Day1to30"
+        }
+      ],
+      "prerequisites": [],
+      "indexSpace": "人事十二宮序",
+      "origin": "辰=4（子=0）",
+      "direction": "正月起月順行，初一起日順行",
+      "operator": "old_santai",
+      "outputType": "Palace12",
+      "outputMeaning": "三台安置宮位",
+      "evidence": "ALGORITHM_PRIOR_CHECKED",
+      "limits": "適用於先前非閏月12×30形式驗算"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "JIELAN_SANTAI",
+      "source": "《紫微斗數捷覽》〈安左右〉〈安三台八座〉",
+      "sourceUrl": "https://shixingji.club/public/ziweidoushujielan",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §2-B",
+      "sourceQuote": "三台左辅顺初一",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "公開點校；本輪未目驗1581年前原刻",
+      "intent": "先安左輔，再以左輔為初一順數三台",
+      "inputs": [
+        {
+          "name": "birthMonth",
+          "type": "BirthMonth1to12"
+        },
+        {
+          "name": "birthDay",
+          "type": "Day1to30"
+        }
+      ],
+      "prerequisites": [
+        "左輔由辰起正月順數生月"
+      ],
+      "indexSpace": "人事十二宮序",
+      "origin": "左輔=(辰+生月−1) mod12",
+      "direction": "生日順數",
+      "operator": "new_santai",
+      "outputType": "Palace12",
+      "outputMeaning": "三台安置宮位",
+      "evidence": "ALGORITHM_PRIOR_CHECKED",
+      "limits": "保留分段算子可同位，但不證等同字名身份"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "XINGXUE_QIU_YEARRULE",
+      "source": "《星學大成》卷十九〈紫炁論〉",
+      "sourceUrl": "",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818R_癸囚炁身分保留與發積反例_跨曜身份轉掛獨立指令門檻_20261010.md",
+      "sourceQuote": "癸生人以為囚星",
+      "witness": "PRIOR_STUDY_818R",
+      "textLayer": "四庫本系轉錄，未見1581年前獨立逐字見證",
+      "intent": "依生年干取古典化囚曜體",
+      "inputs": [
+        {
+          "name": "birthYearStem",
+          "type": "BirthYearStem10"
+        }
+      ],
+      "prerequisites": [
+        "十干化曜母環"
+      ],
+      "indexSpace": "十干→古典曜體",
+      "origin": "年干母環",
+      "direction": "查表",
+      "operator": "old_qiu_partial_known",
+      "outputType": "OldQiuCarrier",
+      "outputMeaning": "癸生年囚炁（此卡僅鎖定癸例）",
+      "evidence": "PARTIAL_CARRIER_RULE_PRIOR_CHECKED",
+      "limits": "沒有把囚炁重新指定成貪狼的來源指令"
+    },
+    {
+      "version": "M11-20261019",
+      "bridgeToQiuFixedJi": "NO_BRIDGE",
+      "id": "JIELAN_JI_DIRECT_YEARRULE",
+      "source": "《紫微斗數捷覽》〈安禄权科忌四化诀〉",
+      "sourceUrl": "https://shixingji.club/public/ziweidoushujielan",
+      "anchor": "research/four_hua_20260929/transcriptions/化忌_818D_古曜名稱分流_安星算法身份與忌星判讀型別_20261009.md §4",
+      "sourceQuote": "甲年生人……太阳下安忌",
+      "witness": "PRIOR_STUDY_818D",
+      "textLayer": "公開點校；本輪未目驗1581年前原刻",
+      "intent": "直接用生年干指定成熟固定星化忌載體",
+      "inputs": [
+        {
+          "name": "birthYearStem",
+          "type": "BirthYearStem10"
+        }
+      ],
+      "prerequisites": [
+        "捷覽四化訣直接指定"
+      ],
+      "indexSpace": "十干→成熟固定星",
+      "origin": "生年干",
+      "direction": "查獨立年度表",
+      "operator": "fixed_ji_source_direct",
+      "outputType": "FixedJiCarrier",
+      "outputMeaning": "成熟固定星直接承化忌；本身並未接收 OldQiuCarrier",
+      "evidence": "DIRECT_ASSIGNMENT_PRIOR_CHECKED",
+      "limits": "不能因兩條取年干就推導舊囚曜 A→新星 B 的歷史轉掛"
+    }
+  ]
+}
