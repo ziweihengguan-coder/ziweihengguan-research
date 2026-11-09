@@ -1,0 +1,380 @@
+{
+  "project": "紫微斗數源流與氣化重建",
+  "module": "M12_ZIWEI_ANSING_SOURCE_CALLER_AUDIT",
+  "date": "2026-10-19",
+  "extends": "math_source_caller_registry_m11_20261019.json (read-only)",
+  "registry_scope": "local XuanSou transcript + prior Korean ZiWeiShu manual transcription + public JieLan textual witnesses / prior anchored transcriptions",
+  "records": [
+    {
+      "id": "X-TIME-NAYIN-DAY",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄90–95行，〈希夷數：定太極法〉",
+      "quote": "假如二十日乙亥時生人，乙亥納音屬火，却於火局看二十日是得辰上六安",
+      "inputs": [
+        "birth_hour_ganzhi",
+        "birth_day"
+      ],
+      "output_type": "base_palace_and_jushu",
+      "operation": "以時柱納音選局，查出生日得到宮位及局數；文本提供乙亥時／20日實例",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "乙亥時柱不是乙生年；水局日期條文有疑字，未重建五局全表"
+    },
+    {
+      "id": "X-TAIJI-TIANKU",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄101–105行，〈定太極天庫例〉",
+      "quote": "巽局既定，却看時上起得幾數……從辰上順數……第六位安太極，又從辰上逆數……第六位安天庫",
+      "inputs": [
+        "base_palace_and_jushu"
+      ],
+      "output_type": "two_primary_positions",
+      "operation": "上一步所得起點與局數，含首順數安太極、逆數安天庫",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "正數轉錄列『辰巳午未酉』只有五字而稱第六位，缺『申』待核；不將推補字當已核原句"
+    },
+    {
+      "id": "X-POLAR-CHILDREN",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄107–109行，〈定極庫諸星例〉",
+      "quote": "太極天驛星逆行……天庫天宜順",
+      "inputs": [
+        "taiji_position",
+        "tianku_position"
+      ],
+      "output_type": "derived_primary_positions",
+      "operation": "分別以太極、天庫已安位置為兩系起點布諸星",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "間隔與異名仍待原頁核，不在M12填滿十四主星所有宮位"
+    },
+    {
+      "id": "X-ZHENGLU",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄145–149行，〈定貴人正祿掃火烈神例〉",
+      "quote": "正祿如甲祿寅，乙祿卯之例",
+      "inputs": [
+        "birth_year_stem"
+      ],
+      "output_type": "lucun_palace",
+      "operation": "按生年干取正祿／祿存宮位",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "本段例舉甲乙；十干完整祿存表採《捷覽》校驗，不冒充《玄藪》本段完整明列"
+    },
+    {
+      "id": "X-SAO-LIE",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄145–149行，同上",
+      "quote": "掃火、烈神如正祿在寅，則掃火在卯，烈神在丑，前後擁遮，如小紫微羊陀例",
+      "inputs": [
+        "lucun_palace"
+      ],
+      "output_type": "paired_malefic_positions",
+      "operation": "依已取得正祿宮位前後各一宮安掃火／烈神（別名擎羊／陀羅）",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "古文在寅示例；全年干同算須借助《捷覽》明列祿存全表作形式比較"
+    },
+    {
+      "id": "X-OUTER12-MAIN",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄204–206行，〈起外局十二從星例〉",
+      "quote": "文貴、八却、文昌、夭傷、印綬、權柄、天孤、五福、天空、夭壽、天暗、天刑……却從寅上數……并從文貴上起",
+      "inputs": [
+        "ju_yinyang",
+        "sex"
+      ],
+      "output_type": "outer_twelve_positions",
+      "operation": "主法從寅起文貴，依局陰陽與男女順逆安十二從星",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "與本書鳳閣別名文昌、生年十變化刑皆異型"
+    },
+    {
+      "id": "X-OUTER12-LU-ALT",
+      "source": "《玄藪》〈中天太極紫微數秘訣〉",
+      "url": "https://ekachai.pixnet.net/blog/posts/11365237316",
+      "local_path": "玄藪_中天太極紫微數秘訣_網路轉錄校勘版.txt",
+      "locator": "本機轉錄206行，〈起外局十二從星例〉附句",
+      "quote": "〔一法從祿上，如前女逆男順。〕",
+      "inputs": [
+        "lucun_palace",
+        "sex",
+        "alternative_method_selected"
+      ],
+      "output_type": "outer_twelve_positions",
+      "operation": "另一法指定從祿所在宮起；可能另立性別順逆條件",
+      "witness": "LOCAL_TRANSCRIPTION_NOT_ORIGINAL_LEAF",
+      "caveat": "是否仍受局陰陽與『如前女逆男順』完整方向制約未核定，故不產生12星精確落宮"
+    },
+    {
+      "id": "Z-SEVEN-COLUMNS",
+      "source": "乙亥字《紫微數》韓國國立中央圖書館所藏",
+      "url": "https://www.nl.go.kr/",
+      "local_path": "research/four_hua_20260929/transcriptions/乙亥字紫微數_關鍵表與星義_人工校讀.txt",
+      "locator": "人工校讀第21張；KOL200200680",
+      "quote": "科、魁、祿、馬、權、福、禍；癸之福、禍均列貪（已正規化為貪狼）",
+      "inputs": [
+        "birth_year_stem",
+        "selected_column"
+      ],
+      "output_type": "early_named_fixed_star",
+      "operation": "按年干與7欄選取星名/功能欄結果",
+      "witness": "PREVIOUS_MANUAL_TRANSCRIPTION_EXCERPT",
+      "caveat": "整理檔用成熟星名正規化，回到版本原字須核影像；祿、福、禍不可先驗改讀成熟四化"
+    },
+    {
+      "id": "Z-TEN-ROLES",
+      "source": "乙亥字《紫微數》韓國國立中央圖書館所藏",
+      "url": "https://www.nl.go.kr/",
+      "local_path": "research/four_hua_20260929/transcriptions/乙亥字紫微數_關鍵表與星義_人工校讀.txt",
+      "locator": "人工校讀第128–129張",
+      "quote": "十干變曜欄序：祿、暗、福、耗、蔭、貴、刑、印、囚、權",
+      "inputs": [
+        "birth_year_stem",
+        "old_role"
+      ],
+      "output_type": "old_stellar_role_carrier",
+      "operation": "依干及十變角色查舊曜；癸囚炁承舊研究另證",
+      "witness": "PREVIOUS_MANUAL_TRANSCRIPTION_EXCERPT",
+      "caveat": "本摘要未逐格抄出整張古曜十變表；不得將『囚』字當『禍』欄別名"
+    },
+    {
+      "id": "J-FIVE-JU",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈定五行局訣／定五局例〉；§757",
+      "quote": "身命既定要布局……次將遁甲納音數，數至本命五局明",
+      "inputs": [
+        "birth_year_stem",
+        "ming_palace"
+      ],
+      "output_type": "five_element_ju",
+      "operation": "命宮既定，再以遁甲納音定五行局",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "輸入的命宮另由上一步得；不是《玄藪》時柱納音直選五局"
+    },
+    {
+      "id": "J-ZIFU",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安紫微天府訣〉；§757",
+      "quote": "局定生日逆布紫……言五局既定之後，即在前五局圖內，尋本人生日上安紫微",
+      "inputs": [
+        "five_element_ju",
+        "birth_day"
+      ],
+      "output_type": "ziwei_tianfu_anchor",
+      "operation": "沿前五局圖用出生日取紫微，並取天府之安置",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "本輪只核局定→紫府的來源依賴，不用簡化公式替換原古表"
+    },
+    {
+      "id": "J-MAIN-STARS",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈布南北二斗諸星訣〉；§757",
+      "quote": "假如紫微在寅宮，則逆行丑宮安天機……假如天府在寅宮，則順行卯宮安太陰",
+      "inputs": [
+        "ziwei_tianfu_anchor"
+      ],
+      "output_type": "fixed_primary_star_positions",
+      "operation": "依已得到的紫微／天府兩個安星起點布南北斗諸星",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "與《玄藪》同屬兩錨布星，但前置輸入不同；不等於跨書同算法"
+    },
+    {
+      "id": "J-LUCUN",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安祿存羊陀星訣〉；§818-AC",
+      "quote": "甲祿到寅宮，乙祿居卯府，丙戊祿在巳，丁己祿居午，庚禄定居申，辛禄酉上补，壬禄亥中藏，癸祿居子位",
+      "inputs": [
+        "birth_year_stem"
+      ],
+      "output_type": "lucun_palace",
+      "operation": "年干定祿存之宮",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "年干取祿存與年干取四化雖同輸入，無文內祿存→四化選星的調用句"
+    },
+    {
+      "id": "J-YANGTUO",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安祿存羊陀星訣〉；§818-AC",
+      "quote": "祿前一位羊刃當，祿後一位陀羅苦；羊陀二星，則以禄存為主",
+      "inputs": [
+        "lucun_palace"
+      ],
+      "output_type": "paired_malefic_positions",
+      "operation": "依前一步祿存位置，前一宮安羊、後一宮安陀",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "這是依宮位安星；不是年干舊囚身份轉移"
+    },
+    {
+      "id": "J-FOUR-TAGS",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安祿權科忌四化訣〉；§757／§818-AC",
+      "quote": "但屬甲年生人，則廉貞下安祿，破軍下安權，武曲下安科，太陽下安忌",
+      "inputs": [
+        "birth_year_stem",
+        "fixed_primary_star_positions"
+      ],
+      "output_type": "annual_four_function_tags",
+      "operation": "年干直接選既有固定星承接四化標籤（甲忌太陽、癸忌貪狼）",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "『下安』作用於固定星，不含先讀古囚曜A的操作；不宣稱更早歷史必然無F→R→J"
+    },
+    {
+      "id": "J-LEFT-RIGHT",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安左輔右弼星訣〉；§818-D／《全書》平行文",
+      "quote": "辰上順正尋左輔，戌上逆正右弼當",
+      "inputs": [
+        "birth_month"
+      ],
+      "output_type": "assistant_star_positions",
+      "operation": "以生月取得左輔/右弼之宮",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "以既有研究引文為fixture，未當輪逐葉核該條"
+    },
+    {
+      "id": "J-SANTAI-BAZUO",
+      "source": "《新刻纂集紫微斗數捷覽》公開底本繫聯點校",
+      "url": "https://tool.shixingji.club/library/ziweidoushujielan",
+      "local_path": "research/four_hua_20260929/transcriptions/化權_757_捷覽全書章序_dataflow_四化後處理_20261005.md",
+      "locator": "卷一〈安三台八座星訣〉；§818-D／《全書》平行文",
+      "quote": "三台尋左輔將初一日加在左輔宮，順數至本生日安之；八座尋右弼……逆數至本生日",
+      "inputs": [
+        "assistant_star_positions",
+        "birth_day"
+      ],
+      "output_type": "santai_bazuo_positions",
+      "operation": "先取左右輔弼所在地，生日含首分向順逆安三台八座",
+      "witness": "PREVIOUS_VERIFIED_PUBLIC_TRANSCRIPTION",
+      "caveat": "與《玄藪》月→日直算形式一致，不能據此直接宣告版本歷時因果"
+    }
+  ],
+  "bridges": [
+    {
+      "from": "X-TIME-NAYIN-DAY",
+      "to": "X-TAIJI-TIANKU",
+      "status": "DIRECT_CALL",
+      "reason": "『巽局既定，却看時上起得幾數』接前火局辰上六數例"
+    },
+    {
+      "from": "X-TAIJI-TIANKU",
+      "to": "X-POLAR-CHILDREN",
+      "status": "DIRECT_CALL",
+      "reason": "『太極天驛星逆行』『天庫天宜順』以兩錨展開"
+    },
+    {
+      "from": "X-ZHENGLU",
+      "to": "X-SAO-LIE",
+      "status": "DIRECT_CALL",
+      "reason": "正祿在寅→掃火卯、烈神丑之具體安置句"
+    },
+    {
+      "from": "X-ZHENGLU",
+      "to": "X-OUTER12-LU-ALT",
+      "status": "CONDITIONAL_CALL",
+      "reason": "『一法從祿上』明示改用祿位作起點；完整順逆疑義另註"
+    },
+    {
+      "from": "X-OUTER12-MAIN",
+      "to": "X-OUTER12-LU-ALT",
+      "status": "ALTERNATIVE_ROUTE",
+      "reason": "同一外局從星的寅起主法與祿起異法；不是先算主法再把結果餵異法"
+    },
+    {
+      "from": "J-FIVE-JU",
+      "to": "J-ZIFU",
+      "status": "DIRECT_CALL",
+      "reason": "『五局既定之後』『前五局圖內尋生日』"
+    },
+    {
+      "from": "J-ZIFU",
+      "to": "J-MAIN-STARS",
+      "status": "DIRECT_CALL",
+      "reason": "以紫微天府兩個已定位的主星起布南北斗"
+    },
+    {
+      "from": "J-MAIN-STARS",
+      "to": "J-FOUR-TAGS",
+      "status": "POSTPLACEMENT_TAG_ATTACH",
+      "reason": "『廉貞下安祿／太陽下安忌』在既存星曜上加功能標籤，星名選擇由生年干直定"
+    },
+    {
+      "from": "J-LUCUN",
+      "to": "J-YANGTUO",
+      "status": "DIRECT_CALL",
+      "reason": "『羊陀二星，則以禄存為主』；甲寅→卯丑、乙卯→辰寅"
+    },
+    {
+      "from": "J-LEFT-RIGHT",
+      "to": "J-SANTAI-BAZUO",
+      "status": "DIRECT_CALL",
+      "reason": "『三台尋左輔將初一日加在左輔宮』"
+    },
+    {
+      "from": "X-SAO-LIE",
+      "to": "J-YANGTUO",
+      "status": "OPERATOR_EQUIVALENCE_ONLY",
+      "reason": "前後一宮與名稱正規化同算；跨書文獻傳承鏈仍另需證明"
+    },
+    {
+      "from": "X-TAIJI-TIANKU",
+      "to": "J-ZIFU",
+      "status": "NO_BRIDGE",
+      "reason": "《玄藪》取時柱納音／生日，與《捷覽》年干遁甲局／生日非同一入口"
+    },
+    {
+      "from": "Z-TEN-ROLES",
+      "to": "Z-SEVEN-COLUMNS",
+      "status": "NO_BRIDGE",
+      "reason": "同一書見十變曜及七欄，並無『先取囚曜再選禍欄』的明示caller"
+    },
+    {
+      "from": "Z-TEN-ROLES",
+      "to": "J-FOUR-TAGS",
+      "status": "NO_BRIDGE",
+      "reason": "缺古年度囚A→固定四化B的中介取星語句"
+    },
+    {
+      "from": "Z-SEVEN-COLUMNS",
+      "to": "J-FOUR-TAGS",
+      "status": "NO_BRIDGE",
+      "reason": "祿／福／禍舊欄有表值但無跨欄身份繼承句；不得直接後驗當成熟忌"
+    },
+    {
+      "from": "J-LUCUN",
+      "to": "J-FOUR-TAGS",
+      "status": "NO_BRIDGE",
+      "reason": "同書可見祿存→羊陀，但祿存宮位並非四化訣宣告的輸入"
+    },
+    {
+      "from": "X-SAO-LIE",
+      "to": "J-FOUR-TAGS",
+      "status": "NO_BRIDGE",
+      "reason": "『掃火烈神』只用祿存位置；未授予年度囚身份"
+    }
+  ],
+  "gate": "§816/§817/§818 OPEN; Qiu(癸)=炁 not yet demonstrated to become Ji(癸)=貪狼; 1581 pre-date threshold, G0/G1/G2, §810-A/§812-A remain distinct and untouched"
+}
