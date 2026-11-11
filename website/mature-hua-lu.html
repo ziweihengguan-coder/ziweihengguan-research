@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="紫微衡觀成熟化祿數學重建 V1.0：十四主星雙鏈、十星選池、五虎遁分組、甲壬互換與十干10／10驗算。明確區分固定模型公設、數學結果及仍未證實的古代生成程序。">
+<title>成熟化祿的數學重建｜紫微衡觀研究</title>
+<link rel="stylesheet" href="./assets/anxing-four-hua.css?v=4">
+<link rel="canonical" href="https://ziweihengguan.com/mature-hua-lu.html">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="紫微衡觀研究">
+<meta property="og:title" content="成熟化祿的數學重建">
+<meta property="og:description" content="安星雙鏈與五虎遁的條件式化祿重建：基準8／10，甲壬互換後10／10；公設與歷史來源分層。">
+<meta property="og:url" content="https://ziweihengguan.com/mature-hua-lu.html">
+</head>
+<body>
+<nav class="article-nav" aria-label="網站導覽">
+<a href="./index.html">← 安星與四化主研究頁</a><span>成熟化祿的數學重建</span>
+</nav>
+<header class="hero">
+<p class="eyebrow">紫微斗數・四化源流研究</p>
+<h1>成熟化祿的數學重建</h1>
+<p class="subtitle">從紫微、天府雙鏈的對宮幾何，到五虎遁五組、同組雙祿的陰陽條件；固定「甲壬互換」為模型公設，完成十干化祿的可重算重建。這是數學模型定稿，不是失傳古法的史實認定。</p>
+<div class="hero-tags">
+<span>V1.0 數學封板</span><span>基準 8／10 → 10／10</span><span>甲壬互換為公設</span><span>歷史生成仍待考</span>
+</div>
+<button class="print-action" id="print" type="button">列印文章</button>
+</header>
+<nav class="series-nav" aria-label="研究文章導覽">
+<a href="./index.html">安星與四化首頁</a>
+<a href="./mature-hua-lu.html" aria-current="page">化祿完整成文</a>
+<a href="./quan-five-steps.html">化權五步成文</a>
+<a href="./mature-hua-ke.html">化科完整成文</a>
+<a href="./mature-hua-ji.html">化忌完整成文</a>
+</nav>
+<main><article>
+<p class="lede">本篇封板的是<strong>明列前提下可重複計算的十干化祿模型</strong>：先定安星幾何與一張十星基準配置，經甲壬兩干位置互換，完整重現成熟化祿十星。五虎遁分組及中心對稱是結構檢核與等價表示，<strong>並非另一套已獲古文證成、能完全不看祿表獨立生成十星的古算法</strong>。</p>
+<p class="formula-note"><strong>證據標記：</strong>「古籍直接」表示原文已記錄安星或祿表；「模型公設」表示研究者明定且可受反例檢驗的規則；「推導／驗算」表示固定公設後的計算結果；「史源待證」表示尚無原文證明編表者實際採用這個組合程序。計算通過不會自動升格為歷史證明。</p>
+
+<details class="contents"><summary>文章導覽</summary><nav class="toc" aria-label="文章目錄">
+<a href="#chapter-1">研究目標與封板界線</a><a href="#chapter-2">古籍輸入：安星與五虎遁</a>
+<a href="#chapter-3">十四取十：雙鏈對宮幾何</a><a href="#chapter-4">八成吻合的初始基準</a>
+<a href="#chapter-5">甲壬互換：固定公式</a><a href="#chapter-6">十干逐干驗算</a>
+<a href="#chapter-7">五虎雙干與五中心對稱</a><a href="#chapter-8">十二起點與反模型負控</a>
+<a href="#chapter-9">公設、結果與待證問題</a><a href="#chapter-10">結論與研究來源</a>
+</nav></details>
+
+<section id="chapter-1">
+<h2>研究目標與封板界線</h2>
+<p>研究區分兩個命題：<strong>數學可重建性</strong>，是給定輸入與固定規則後能否重現成熟十干祿曜；<strong>歷史生成性</strong>，是早期編表者是否確實依此程序決定星曜。前者可以定稿，後者不因古籍可能散佚就被視為已證。</p>
+<div class="status-grid">
+<div><b>正式封板</b><span>固定星池、M02 基準與甲壬互換，得到逐干 10／10 的可重算模型。</span></div>
+<div><b>附屬幾何</b><span>五虎同組兩祿同奇偶、寅申參照盤的五中心對稱作為檢核與表示。</span></div>
+<div><b>保留公設</b><span>為何剔寅申、為何只交換甲壬、五組中心如何取得，均未由單一古法獨立指定。</span></div>
+<div><b>歷史開放</b><span>《全書》有化祿表值與「挾火而化」，但沒有已核實的完整輸入→選星→輸出古訣。</span></div>
+</div>
+</section>
+
+<section id="chapter-2">
+<h2>古籍輸入：安星雙鏈與五虎遁</h2>
+<p>《捷覽》《全書》系統保存十四主星安星訣及十干四化結果。紫微系與天府系分別循固定星序安置；五虎遁則以年干對決定寅宮宮干首值。這兩項運算的<strong>各自存在</strong>有古文根據，但「拿五虎同組雙干去配兩顆固定化祿星」仍是本研究的跨程序假設。</p>
+<div class="formula">g = 0,…,9 對應甲、乙、丙、丁、戊、己、庚、辛、壬、癸<br>h(g) = [2 + 2(g mod 5)] mod 10</div>
+<div class="table-wrap"><table>
+<thead><tr><th>五虎分組</th><th>甲己</th><th>乙庚</th><th>丙辛</th><th>丁壬</th><th>戊癸</th></tr></thead>
+<tbody><tr><th>寅宮首干</th><td>丙</td><td>戊</td><td>庚</td><td>壬</td><td>甲</td></tr></tbody>
+</table></div>
+<p>若以子＝0、丑＝1、寅＝2……亥＝11 為宮位索引，寅宮起首干為偶數索引 h 時，其他各宮干為：</p>
+<div class="formula">D(g,b) = [h(g) + ((b − 2) mod 12)] mod 10<br>D(g,b) mod 2 = b mod 2</div>
+<p>因此宮干陰陽與地支奇偶一致。不同年干的五套宮干名字不相同，但「兩顆星是否同陰陽宮」在五套盤只相當於同一個宮支奇偶檢驗，不能冒充五份獨立證據。</p>
+</section>
+
+<section id="chapter-3">
+<h2>十四取十：雙鏈對宮幾何</h2>
+<p>將紫微、天府同在寅宮作為參照盤，十四主星的宮位可由雙鏈安星訣取得。先<strong>假定</strong>化祿的候選星分布於排除寅申一軸以外的十個宮位，且保留的每條對宮軸各取一顆紫微系與天府系星，便得到下列十星池。</p>
+<div class="table-wrap"><table>
+<thead><tr><th>保留對宮軸</th><th>紫微系</th><th>天府系</th></tr></thead>
+<tbody>
+<tr><td>子—午</td><td>廉貞（午）</td><td>破軍（子）</td></tr>
+<tr><td>丑—未</td><td>天機（丑）</td><td>天梁（未）</td></tr>
+<tr><td>卯—酉</td><td>天同（酉）</td><td>太陰（卯）</td></tr>
+<tr><td>辰—戌</td><td>武曲（戌）</td><td>貪狼（辰）</td></tr>
+<tr><td>巳—亥</td><td>太陽（亥）</td><td>巨門（巳）</td></tr>
+</tbody></table></div>
+<p>午宮同有廉貞（紫系）、天相（府系）；在「每軸一紫一府」的<strong>已設定條件</strong>下，因子宮破軍屬府系，午宮遂選廉貞而非天相。這可解釋選池內部的一致性，卻無法獨立證成<strong>最初為何一定排除寅申軸</strong>。若改剔子午，仍能形成另一個符合雙鏈平衡的十星池（紫微、七殺代替廉貞、破軍）。</p>
+<div class="formula">S = {廉貞、天機、天同、太陰、貪狼、武曲、太陽、巨門、天梁、破軍}</div>
+</section>
+
+<section id="chapter-4">
+<h2>八成吻合的初始基準</h2>
+<p>先前 M02 在已知成熟祿表的研究背景下建立一個十星不重的初始配干基準 L₀；它具有可檢查的雙鏈幾何性質，但<strong>不是來源盲生成、也不是古籍直接寫出的算法</strong>。</p>
+<div class="formula">L₀ = [天梁、天機、天同、太陰、貪狼、武曲、太陽、巨門、廉貞、破軍]</div>
+<p>依甲至癸對照成熟祿曜，乙、丙、丁、戊、己、庚、辛、癸八格相同，只有甲、壬互置，故 L₀ 的吻合度為 <strong>8／10</strong>。後續模型不再補造「為何剛好是這一張 L₀」的無來源口訣，而如實將 L₀ 登記為已固定的上游公設。</p>
+</section>
+
+<section id="chapter-5">
+<h2>甲壬互換：固定公式</h2>
+<p>V1.0 明確接受<strong>甲（索引0）與壬（索引8）互換</strong>作為固定公設。定義位置置換 π：</p>
+<div class="formula">π(g) = 8，若 g = 0（甲）<br>π(g) = 0，若 g = 8（壬）<br>π(g) = g，其餘八干<br><strong>L(g) = L₀(π(g))</strong></div>
+<p>置換只交換兩個位置，不新增或刪除主星，因此保留十星一一對應。尤其「甲壬互換」是<strong>相對本研究 L₀ 基準的數學描述</strong>，不意味著古人歷史上先編出錯位表、再實施一次交換。</p>
+<div class="formula">L = [廉貞、天機、天同、太陰、貪狼、武曲、太陽、巨門、天梁、破軍]</div>
+<p>這個函數在<strong>固定 S、L₀ 與 π</strong>後可完全重算；10／10 是與既知成熟表的回歸一致性，不是獨立盲測推導。</p>
+</section>
+
+<section id="chapter-6">
+<h2>十干逐干驗算</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>天干</th><th>L₀ 基準</th><th>V1.0 L</th><th>成熟化祿</th><th>對照</th></tr></thead>
+<tbody>
+<tr><td>甲</td><td>天梁</td><td><strong>廉貞</strong></td><td>廉貞</td><td>吻合</td></tr>
+<tr><td>乙</td><td>天機</td><td>天機</td><td>天機</td><td>吻合</td></tr>
+<tr><td>丙</td><td>天同</td><td>天同</td><td>天同</td><td>吻合</td></tr>
+<tr><td>丁</td><td>太陰</td><td>太陰</td><td>太陰</td><td>吻合</td></tr>
+<tr><td>戊</td><td>貪狼</td><td>貪狼</td><td>貪狼</td><td>吻合</td></tr>
+<tr><td>己</td><td>武曲</td><td>武曲</td><td>武曲</td><td>吻合</td></tr>
+<tr><td>庚</td><td>太陽</td><td>太陽</td><td>太陽</td><td>吻合</td></tr>
+<tr><td>辛</td><td>巨門</td><td>巨門</td><td>巨門</td><td>吻合</td></tr>
+<tr><td>壬</td><td>廉貞</td><td><strong>天梁</strong></td><td>天梁</td><td>吻合</td></tr>
+<tr><td>癸</td><td>破軍</td><td>破軍</td><td>破軍</td><td>吻合</td></tr>
+</tbody></table></div>
+<p class="callout"><strong>驗算結果：</strong>十干 10／10；十星互異 10／10。化祿在已比對的《捷覽／全集》與明刊《全書》成熟支中是一致的；兩支主要差異在化科、化忌，請參閱<a href="./mature-hua-ke.html">化科成文</a>與<a href="./mature-hua-ji.html">化忌成文</a>。</p>
+</section>
+
+<section id="chapter-7">
+<h2>五虎同組與五中心：幾何的另一種表示</h2>
+<p>將已生成的 L 兩兩按五虎組配對，在紫府同寅盤得到五組各自「兩祿星落同奇偶地支」，即 <strong>5／5</strong>。若把兩端視為十二宮圓周上的等距位置，還可用五個中心與半距表示。<strong>中心是由已選出的兩星位置反求</strong>，目前不是由五虎遁單獨先算出的古代輸入。</p>
+<div class="formula">p(L(g)) ≡ p(L(g+5)) (mod 2)，g = 0,…,4<br>p₋ ≡ c − d (mod 12)，p₊ ≡ c + d (mod 12)</div>
+<div class="table-wrap"><table>
+<thead><tr><th>五虎組</th><th>兩祿與宮支</th><th>中心 c</th><th>半距 d</th><th>兩干方向</th></tr></thead>
+<tbody>
+<tr><td>甲己</td><td>廉貞午／武曲戌</td><td>申</td><td>2</td><td>甲 −；己 +</td></tr>
+<tr><td>乙庚</td><td>天機丑／太陽亥</td><td>子</td><td>1</td><td>乙 +；庚 −</td></tr>
+<tr><td>丙辛</td><td>天同酉／巨門巳</td><td>未</td><td>2</td><td>丙 +；辛 −</td></tr>
+<tr><td>丁壬</td><td>太陰卯／天梁未</td><td>巳</td><td>2</td><td>丁 −；壬 +</td></tr>
+<tr><td>戊癸</td><td>貪狼辰／破軍子</td><td>寅</td><td>2</td><td>戊 +；癸 −</td></tr>
+</tbody></table></div>
+<p>在這個<strong>指定的寅／申參照幾何</strong>中，五中心依甲己至戊癸為【申、子、未、巳、寅】，距離為【2、1、2、2、2】；方向如表。若先把中心、距離與方向當作模型常數，便可反算十星位置，但這與甲壬互換模型是同一組結果的重新參數化，<strong>不是一份獨立生成證明</strong>。</p>
+<p>《玄藪》〈定貴人正祿掃火烈神例〉另有從正祿中心向兩旁各一步安功能星的古法語法；它只能證明<strong>別種星曜</strong>存在「中心→兩側」運算，不能直接證明化祿採用 ±2，也未指定五虎五中心。</p>
+</section>
+
+<section id="chapter-8">
+<h2>十二起點與反模型負控</h2>
+<h3>哪些不變，哪些會變？</h3>
+<p>以本機十四主星安星引擎重建十二種紫微起點，五虎同組兩祿<strong>同宮支奇偶</strong>的觀察維持 12／12；紫府由寅移申時，星宮整體平移六宮，故十顆星名與化祿指派仍一致。</p>
+<p>但五中心「一組 ±1、四組 ±2」<strong>並非十二起點的共同定理</strong>。只有寅、辰、申、戌四種起點具有此形態；丑、巳、未、亥變成兩組 ±1、三組 ±2；子、卯、午、酉存在超出 ±1／±2 的星對。因此本篇不把寅／申兩盤的中心表誤稱為通用十二盤固定公式。</p>
+<h3>為何幾何本身不能唯一推出甲壬？</h3>
+<p>固定 L₀ 且只准交換兩個<strong>陽干</strong>，十種候選中僅甲壬能恢復五組同奇偶 5／5；但放寬到任意兩干交換的 45 種候選，<strong>甲壬與丁己</strong>都能達 5／5。只固定五陰干而任意排列五陽干，仍有 <strong>12 種</strong>通過。</p>
+<p>即使限制紫府同寅的十宮、同奇偶配對及四組 ±2、一組 ±1，仍有六種無標籤配對；若連天干組名稱與兩端方向也須指定，則有 <strong>6 × 5! × 2⁵ = 23,040</strong> 種條件式安排。這些數量說明模型可重現，<strong>卻不能從幾何條件唯一識別史實算法</strong>。</p>
+<p>《全書》「挾火而化」雖緊鄰四化訣，且甲廉貞為成熟表明文，但將它直接讀為「廉貞起首」並不能獨立完成其餘九干排序；M16 證實把移出的天梁安回壬位，數學上仍等價於甲壬互換。</p>
+</section>
+
+<section id="chapter-9">
+<h2>公設、可證結果與開放問題</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>項目</th><th>目前定級</th><th>說明</th></tr></thead>
+<tbody>
+<tr><td>十四主星雙鏈與五虎遁起干</td><td>古籍直接／算法形式化</td><td>各有原文操作；跨接成祿曜選星仍缺指定句。</td></tr>
+<tr><td>剔寅申、十星池、廉貞勝天相</td><td>條件式幾何</td><td>在既定每軸一紫一府的前提下成立；仍有剔子午反模型。</td></tr>
+<tr><td>M02 基準 L₀</td><td>模型公設</td><td>已知成熟答案背景下的 8／10 配干基準，不冒稱盲生成。</td></tr>
+<tr><td>只交換甲壬</td><td>V1.0 固定公設</td><td>可重現成熟 10／10；不能稱已找到交換的古訣。</td></tr>
+<tr><td>五組雙祿同奇偶</td><td>幾何驗算</td><td>十二起點一致，但不足以排除丁己反模型。</td></tr>
+<tr><td>五中心、±1／±2與取端</td><td>寅／申盤等價表示</td><td>中心由既有祿星反算；尚無來源端唯一生成規則。</td></tr>
+<tr><td>歷史上是否採用完整程序</td><td>史源待證</td><td>原書可能缺佚，但不能以失傳可能性替代證據。</td></tr>
+</tbody></table></div>
+<p class="callout"><strong>研究規約：</strong>V1.0 公式與明列公設先封板。新出原刻、抄本、異文或可靠的獨立算法，能說明「十星選池→五虎組中心→陰陽取端→甲壬定位」時，再另開來源補證，不追認本篇模型已是原始古法。</p>
+</section>
+
+<section id="chapter-10">
+<h2>結論與研究來源</h2>
+<p>成熟化祿在本文固定的十星池與基準配置之下，只需交換甲壬兩位置，便能從 8／10 得到 <strong>10／10</strong>；模型可由明確置換式、五虎分組、安星宮位與逐干表重複驗算。五組對稱中心是有用的幾何說明，但它們的獨立來源、定向及選池前提尚未證成。</p>
+<p><strong>最終定位：</strong>化祿「數學模型 V1.0」完成；化祿「歷史生成來源」開放。數學重建的可檢查性不依賴原始古籍一定存世，也不宣稱已復原失傳口訣。</p>
+<div class="sources">
+<p><strong>《新刻纂集紫微斗數捷覽》與《紫微斗數全集》系統。</strong>提供安星訣與成熟祿曜見證；其記錄結果與古人實際生成步驟應分開。</p>
+<p><strong>明刊《新鍥希夷陳先生紫微斗數全書》卷二。</strong>〈起五行寅例〉提供五虎遁起干，〈安祿權科忌四星變化訣〉記載甲廉、壬梁等結果；「挾火而化」不可逕讀為交換程序。</p>
+<p><strong>乙亥字《紫微數》與《玄藪・中天太極紫微數秘訣》。</strong>提供早期祿欄、正祿／外局起點與左右安星的其他操作；但跨接成熟固定祿曜仍是待證。</p>
+<p><strong>《三命通會》〈論遁月時〉。</strong>提供與五虎遁同源的月干起例；並不明定化祿「甲壬互換」。</p>
+<p><strong>本機可重跑研究。</strong>V0.4（五虎同組陰陽）、V0.5（甲壬／乙癸競爭）、V0.6（五中心與丁己反模型）、V0.8（中心來源負控）、M13（選池不可識別）、M16（「挾火」起首負控）、2026-11-11 的五虎遁版本核查。計算與史源結論分開封存。</p>
+</div>
+<p>可核對的<a href="https://github.com/ziweihengguan-coder/ziweihengguan-research/blob/main/research/飛星四化_成熟化祿數學重建_研究成文稿_20261111.md">V1.0 研究成文稿</a>與<a href="https://github.com/ziweihengguan-coder/ziweihengguan-research/blob/main/research/lu_model_v10_math_freeze_and_site_links_20261111.js">驗算程式</a>已保存於公開研究資料庫，便於獨立重跑。</p>
+<p>延伸閱讀：<a href="./quan-five-steps.html">化權完整成文</a>、<a href="./mature-hua-ke.html">化科完整成文</a>、<a href="./mature-hua-ji.html">化忌完整成文</a>。四化共用的研究方法與版本比較，見<a href="./index.html">安星與四化總覽</a>。</p>
+</section>
+</article></main>
+<footer>
+<p><a href="./quan-five-steps.html">繼續閱讀：成熟化權成文</a> ・ <a href="./index.html">返回安星與四化主研究頁</a> ・ <a href="https://ziweihengguan.com/">紫微衡觀</a></p>
+<p>成熟化祿的數學重建 V1.0 ・ 固定公設、十干驗算與歷史來源界線 ・ 2026-11-11</p>
+</footer>
+<script src="./assets/anxing-four-hua.js?v=3" defer></script>
+</body></html>
